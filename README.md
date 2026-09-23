@@ -1,7 +1,11 @@
 # OpenJeff
 
 <p align="center">
-  <img src="assets/branding/openjeff-logo.png" alt="OpenJeff name-badge mascot" width="360">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/branding/openjeff-logo-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/branding/openjeff-logo.png">
+    <img src="assets/branding/openjeff-logo.png" alt="OpenJeff name-badge mascot" width="360">
+  </picture>
 </p>
 
 **Small answers. Serious judgment.**
