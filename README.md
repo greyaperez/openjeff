@@ -11,7 +11,7 @@
 **Small answers. Serious judgment.**
 
 [Download the adapter on Hugging Face](https://huggingface.co/greyecho/openjeff-pilot-v1)
-· [JevBench evaluator instructions](docs/jevbench-submission.md)
+· [JevBench evaluation requested](https://github.com/fstandhartinger/jevbench/issues/54)
 
 A self-hosted, experimental judgment primitive: evidence and a finite set of
 choices go in; probabilities, a proposed decision, and an explicit abstention

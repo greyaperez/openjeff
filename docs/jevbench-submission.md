@@ -1,5 +1,6 @@
 # JevBench evaluation handoff
 
+Evaluation requested in [JevBench issue #54](https://github.com/fstandhartinger/jevbench/issues/54).
 OpenJeff has not received an official JevBench rank. Request evaluation of the
 frozen AR-only `openjeff-pilot-v1`, not the optional diffusion experiment.
 
