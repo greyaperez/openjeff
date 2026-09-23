@@ -1,0 +1,260 @@
+{
+  "retrieved_at": "2026-09-23T01:44:12.765968+00:00",
+  "files": [
+    {
+      "url": "https://api.github.com/repos/fstandhartinger/jevbench",
+      "path": "jevbench/repository.json",
+      "sha256": "59ad303f64a5e8a03e8530ac005cd3d607a16081ef9c1fd8eb9f5674b3ba814c"
+    },
+    {
+      "url": "https://api.github.com/repos/fstandhartinger/jevbench/commits/main",
+      "path": "jevbench/commit.json",
+      "sha256": "572a5edc96c8e481178460106d668caaf539d560b6c85d44d986be9d6f7f69db"
+    },
+    {
+      "url": "https://api.github.com/repos/fstandhartinger/jevbench/git/trees/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84?recursive=1",
+      "path": "jevbench/tree.json",
+      "sha256": "4336fa1cdb24e77b1bb7e9ea886e8dd7cc37793aa19a1b856ecdbeeb40f0db77"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/README.md",
+      "path": "jevbench/README.md",
+      "sha256": "c140008036be241e3baa1a446d4dfb4b88a65bd3770843df1fafcba3c63e0b55"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/RESULTS-v1.2.md",
+      "path": "jevbench/RESULTS-v1.2.md",
+      "sha256": "809c8856c962878b9be5b1cb17efb053a4b499fb09b56edec7fd1e4910777017"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/RESULTS-COMBINATIONS.md",
+      "path": "jevbench/RESULTS-COMBINATIONS.md",
+      "sha256": "360b27f786f64b1baf272f88718ed98859de545799ec17f4be005fa86f196cb5"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/LICENSE",
+      "path": "jevbench/LICENSE",
+      "sha256": "3e5beed774bb0bcbfb2fcf24ba9554212c6ae112937d308040989465ab0c5784"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/THIRD-PARTY.md",
+      "path": "jevbench/THIRD-PARTY.md",
+      "sha256": "396422e29055bba4073f4a9e5a7163cc724f13e970a34ef58e8ea1fb439b9b38"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/datasets/HARD-TIER.md",
+      "path": "jevbench/datasets/HARD-TIER.md",
+      "sha256": "0c5a042b6b283f777366769c380f6aa8e16a5d2f24eae7e56bc5bc2a20cb4a4d"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/docs/v1.2-additions-winnow.md",
+      "path": "jevbench/docs/v1.2-additions-winnow.md",
+      "sha256": "c42588805284130f70c52afb904899fda820392e97112894c8c4edfb90499223"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/docs/v1.2-additions-djev-thinking.md",
+      "path": "jevbench/docs/v1.2-additions-djev-thinking.md",
+      "sha256": "65a1a6899b6280fd86653daaa2a9532910fd10bd4081805f329a27e4f0ffb7af"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/jevbench/composite_v13.py",
+      "path": "jevbench/jevbench/composite_v13.py",
+      "sha256": "66562dffb9d6f70bcafe5a0d7a823e0f48195aa6cdfb12dfc7d32f064b433d33"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/results/v1.2/jevbench-v1.2-results.json",
+      "path": "jevbench/results/v1.2/jevbench-v1.2-results.json",
+      "sha256": "20fce8e6e4f078d4a3d0105abb5739bacabbb6d4112a1f8be7d2db76f44cdb78"
+    },
+    {
+      "url": "https://api.github.com/repos/Davipar/djev-dev",
+      "path": "djev/repository.json",
+      "sha256": "04099de5e63118d9c442f05aae72dc5203f1bda5b42fd5382e325574ee83015b"
+    },
+    {
+      "url": "https://api.github.com/repos/Davipar/djev-dev/commits/main",
+      "path": "djev/commit.json",
+      "sha256": "3ab3c4c3e11d29d1ef18405725236df237e981baf146e391b77782eb8a8da082"
+    },
+    {
+      "url": "https://api.github.com/repos/Davipar/djev-dev/git/trees/3ce907e6835212f27ee82b4cee9039198c4abe35?recursive=1",
+      "path": "djev/tree.json",
+      "sha256": "c913efbb08098d90faf2eb17aa161adf7227e942d48ba5ae9648432451da94e3"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Davipar/djev-dev/3ce907e6835212f27ee82b4cee9039198c4abe35/README.md",
+      "path": "djev/README.md",
+      "sha256": "45ad863f6a5971b8c88806d34d57534b988ea16f4f7844750f2960b64462cf86"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Davipar/djev-dev/3ce907e6835212f27ee82b4cee9039198c4abe35/LICENSE",
+      "path": "djev/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Davipar/djev-dev/3ce907e6835212f27ee82b4cee9039198c4abe35/NOTICE",
+      "path": "djev/NOTICE",
+      "sha256": "7d96ac3c9174d4f8010d0be7d8c4de7cd0774e8d90c55e8400650a565226699f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Davipar/djev-dev/3ce907e6835212f27ee82b4cee9039198c4abe35/docs/architecture.md",
+      "path": "djev/docs/architecture.md",
+      "sha256": "c5c36e931b2009e98f7706596581047080e8e6f31e327433cc8a452c0ed99c26"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Davipar/djev-dev/3ce907e6835212f27ee82b4cee9039198c4abe35/docs/runtime.md",
+      "path": "djev/docs/runtime.md",
+      "sha256": "68779c30fdc7240fe0c2c3307eacee9629576c7f179abaab8ff6b18f6033b63c"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Davipar/djev-dev/3ce907e6835212f27ee82b4cee9039198c4abe35/djev/engine.py",
+      "path": "djev/djev/engine.py",
+      "sha256": "2cbec20957ea207bc369f199352842524fe2a9967fe3b6749fd199ee8941b0a1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Davipar/djev-dev/3ce907e6835212f27ee82b4cee9039198c4abe35/djev/labels.py",
+      "path": "djev/djev/labels.py",
+      "sha256": "eeaa4da29f1240893fc95e8a3d66faa6e46d32826f813cbe33b8c3c087b89230"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Davipar/djev-dev/3ce907e6835212f27ee82b4cee9039198c4abe35/runtime/sources.json",
+      "path": "djev/runtime/sources.json",
+      "sha256": "f1b97f9310ce9834bfd9cd5a129d50cb6e52f28440f2410bf9a9228687663298"
+    },
+    {
+      "url": "https://huggingface.co/api/models/google/gemma-4-E2B-it",
+      "path": "models/google--gemma-4-E2B-it/metadata.json",
+      "sha256": "103a45afaeb741a15974c3562b6be6a0f4b69e589e149b8405ae37cb74f50464"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-E2B-it/resolve/3e22461f65e89153144f8adb70e3b8c2cc9845a7/README.md",
+      "path": "models/google--gemma-4-E2B-it/README.md",
+      "sha256": "3e0608a6be80e3eb040a5aa6c76707809503deb85be6360184a118fb6156526c"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-E2B-it/resolve/3e22461f65e89153144f8adb70e3b8c2cc9845a7/config.json",
+      "path": "models/google--gemma-4-E2B-it/config.json",
+      "sha256": "1b28f3d2c3100f6c594754b81107428bd7b822a7f48272ca681dae9d2ec38330"
+    },
+    {
+      "url": "https://huggingface.co/api/models/google/gemma-4-E4B-it",
+      "path": "models/google--gemma-4-E4B-it/metadata.json",
+      "sha256": "dfc41a103a5a867b52e73b46bb97453ab8677e941e03a4e71593916ef2d9c6b3"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-E4B-it/resolve/ee0ef6023621cff504d758262d4e04895a5af4a2/README.md",
+      "path": "models/google--gemma-4-E4B-it/README.md",
+      "sha256": "b21e4f69614ccd77baa2f3797d05311040dee07b989cb9f0d25111aa4b605b2c"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-E4B-it/resolve/ee0ef6023621cff504d758262d4e04895a5af4a2/config.json",
+      "path": "models/google--gemma-4-E4B-it/config.json",
+      "sha256": "33b10c02df3c2e8536cf323d29d53262aaa2f4d11dbe19bc729373fbe90295d4"
+    },
+    {
+      "url": "https://huggingface.co/api/models/google/gemma-4-12B-it",
+      "path": "models/google--gemma-4-12B-it/metadata.json",
+      "sha256": "fe5f6cd2fa619bdbd308a173292118540a7bb0282ccd9e8b5c48fa5485cbdff8"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-12B-it/resolve/707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7/README.md",
+      "path": "models/google--gemma-4-12B-it/README.md",
+      "sha256": "04a06469e3d83b941eaa776a3647b8690b5a7cc5c833af2381e5345bb1bb45c0"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-12B-it/resolve/707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7/config.json",
+      "path": "models/google--gemma-4-12B-it/config.json",
+      "sha256": "478c46e8d2c52d5c2d85bf67e3b3e8c90e7c9d91086cee27e3c267907e936bd9"
+    },
+    {
+      "url": "https://huggingface.co/api/models/google/gemma-4-26B-A4B-it",
+      "path": "models/google--gemma-4-26B-A4B-it/metadata.json",
+      "sha256": "e44ff07ae1b2e270b7013215e69fc99cbbe35b649dd650d24c23aec3befcb788"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it/resolve/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/README.md",
+      "path": "models/google--gemma-4-26B-A4B-it/README.md",
+      "sha256": "4f463225c4fe49ec120115b0f9bb6713ff1556293a909903ffdae3df7bf974da"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it/resolve/4d7ae4984b7db7de8f8457170b3f1a419ee76d52/config.json",
+      "path": "models/google--gemma-4-26B-A4B-it/config.json",
+      "sha256": "ed0c1eb3633de771906e9ba004a44cc5635bcc06ee2062077c3d2e88a50707d3"
+    },
+    {
+      "url": "https://huggingface.co/api/models/google/gemma-4-31B-it",
+      "path": "models/google--gemma-4-31B-it/metadata.json",
+      "sha256": "79a05905109f644eca43bd8f99006312112f55c0f00f37eeaf1d893ea0bfd283"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-31B-it/resolve/842da3794eaa0b77d5f08bae87a17459d91ff475/README.md",
+      "path": "models/google--gemma-4-31B-it/README.md",
+      "sha256": "e209f5c435b1e66055bd6d7c29185103ae8d2027a03a96b359335154f206b82b"
+    },
+    {
+      "url": "https://huggingface.co/google/gemma-4-31B-it/resolve/842da3794eaa0b77d5f08bae87a17459d91ff475/config.json",
+      "path": "models/google--gemma-4-31B-it/config.json",
+      "sha256": "e967dd38bc5cfd38bd09a995a7bf4a754075df2b46aba68f7fbb5a791e6d8dd1"
+    },
+    {
+      "url": "https://huggingface.co/api/models/google/diffusiongemma-26B-A4B-it",
+      "path": "models/google--diffusiongemma-26B-A4B-it/metadata.json",
+      "sha256": "096b864f50f6d8f6d0223bc1e3d62fb1c5049f3c2a0ac7731dbf42f3702b380e"
+    },
+    {
+      "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it/resolve/f7f5b7f5fa82ffc52addd066915886d497f5517b/README.md",
+      "path": "models/google--diffusiongemma-26B-A4B-it/README.md",
+      "sha256": "3acbbf7e4c01297291113b1297732b6bcecf0d7769a2571fefeca4f0f5909747"
+    },
+    {
+      "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it/resolve/f7f5b7f5fa82ffc52addd066915886d497f5517b/config.json",
+      "path": "models/google--diffusiongemma-26B-A4B-it/config.json",
+      "sha256": "13b11d2fe87302cc2332c64eb9eb4ac305d9b8a123ffe9c5cb5b1920fc70c506"
+    },
+    {
+      "url": "https://huggingface.co/api/models/allenai/Olmo-3-7B-Instruct",
+      "path": "models/allenai--Olmo-3-7B-Instruct/metadata.json",
+      "sha256": "1e84af003092850cc28b080f557ea212f008d775b8f9e6a23e71ef3bd08c2adb"
+    },
+    {
+      "url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/resolve/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/README.md",
+      "path": "models/allenai--Olmo-3-7B-Instruct/README.md",
+      "sha256": "9c7c873ea9bd506db7800e61a0535302106bdc393d72b0d2341197330d25a7fe"
+    },
+    {
+      "url": "https://huggingface.co/allenai/Olmo-3-7B-Instruct/resolve/6e5971d9eba42665f5bd5a0fcf047f299ce1dccc/config.json",
+      "path": "models/allenai--Olmo-3-7B-Instruct/config.json",
+      "sha256": "6282ae812f9e494bd212e9a3233d68dc4d5f1e2569642423d2b79a3e80373ef8"
+    },
+    {
+      "url": "https://huggingface.co/api/models/allenai/Olmo-3.1-32B-Instruct",
+      "path": "models/allenai--Olmo-3.1-32B-Instruct/metadata.json",
+      "sha256": "8888cc7a3b2977b4b37ec4b2bbc96a6e01d39f4f47dd28c274ffcb647142dcae"
+    },
+    {
+      "url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/resolve/ac0587e4a7744a551c059d8cd17ba220bc940dae/README.md",
+      "path": "models/allenai--Olmo-3.1-32B-Instruct/README.md",
+      "sha256": "937c83504fc8c2d422922913af601feb6ec7b21415061d86d9e793c52359525b"
+    },
+    {
+      "url": "https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/resolve/ac0587e4a7744a551c059d8cd17ba220bc940dae/config.json",
+      "path": "models/allenai--Olmo-3.1-32B-Instruct/config.json",
+      "sha256": "d47a120cb2669cd46482d5c2da9488903b67759ca167cd85c1127b2e05755f95"
+    },
+    {
+      "url": "https://huggingface.co/api/models/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "path": "models/nvidia--NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/metadata.json",
+      "sha256": "e1c0ffe996dd23e4b56dc6a08df600bd3d2d53a5a445d721f0428e64f81621eb"
+    },
+    {
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/resolve/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/README.md",
+      "path": "models/nvidia--NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/README.md",
+      "sha256": "faec6eef185d9993d92a0f03c6ad872381bf252b21699bf5b3ecb52fdeac112b"
+    },
+    {
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/resolve/bf77c3174f68ad409e1c2aa60daeb46e32d1c606/config.json",
+      "path": "models/nvidia--NVIDIA-Nemotron-3-Nano-30B-A3B-BF16/config.json",
+      "sha256": "dd9fa380ac107b0477db5a26108db9febe6378e7bb3966a107944853ec4f76f8"
+    }
+  ]
+}

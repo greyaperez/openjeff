@@ -1,0 +1,26 @@
+{
+  "health": {
+    "status": "ready",
+    "scorer_id": "93ab64da7b0c70ece11c0e8afa5d1729eb0b0252fba1edcf364789f497e8dc91"
+  },
+  "saved_adapter_reload_and_http_parity": [
+    {
+      "id": "openjeff-curriculum-v1/calibration_check/policy_precedence/00005",
+      "max_probability_error": 0.0,
+      "scorer_id_match": true
+    },
+    {
+      "id": "openjeff-curriculum-v1/calibration_check/unit_conversion/00000",
+      "max_probability_error": 0.0,
+      "scorer_id_match": true
+    },
+    {
+      "id": "openjeff-curriculum-v1/calibration_check/entailment/00007",
+      "max_probability_error": 0.0,
+      "scorer_id_match": true
+    }
+  ],
+  "invalid_request_status": 400,
+  "bound_address": "127.0.0.1",
+  "publicly_exposed": false
+}

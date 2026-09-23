@@ -1,0 +1,27 @@
+{
+  "status": "startup_failed_no_model_evaluation",
+  "preflight": {
+    "source_hashes_and_patch_compilation": "passed",
+    "dependency_resolution": "passed",
+    "CUDA_13_0_wheel_layout": "verified",
+    "bootstrap_image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+    "planned_gpu": "B200",
+    "planned_hourly_compute_usd": 6.79,
+    "planned_container_disk_gb": 120,
+    "work_timeout_seconds": 2100,
+    "provider_termination_timer_verified": false,
+    "absolute_stop_utc": "2026-09-23T05:38:25+00:00",
+    "startup_watchdog": "runpodctl config using existing injected pod key; detached sleep to absolute deadline; repeat own-pod stop until success; exec official /start.sh",
+    "stop_command_successfully_exercised_on_prior_A100": true,
+    "other_running_resources": 0,
+    "maximum_45_minute_cost_usd": 5.1075,
+    "automatic_topups_disabled": true,
+    "watchdog_note": "The stop primitive succeeded on A100, but the B200 startup override did not reach a confirmed armed state. Do not call this a verified B200 timeout or successful diffusion runtime."
+  },
+  "automatic_approval_review": "Initial rejection: unverified runtime/start and shutdown plus simultaneous A100 balance concern. Subsequent evidence: A100 exported/stopped/terminated; zero hourly billing; 6.93 USD balance; actual own-pod CLI stop succeeded; official base-image CMD verified; startup override now arms provider stop before starting Jupyter. One retry with these new controls. Revised deployment was allowed. Actual startup subsequently failed; no further rental retry is planned for this release.",
+  "observed_failure": "Repeated CUDA image banners followed by restart before Jupyter or workload became ready. Startup override exited before /start.sh. Exact suppressed CLI/config error was not captured.",
+  "manual_stop": "Confirmed stopped at 0 USD/hour, then terminated; no pods remain and account spend rate is 0.000 USD/hour.",
+  "model_scored": false,
+  "additional_credit_purchase_usd": 0,
+  "credit_consumption_note": "No extra cash purchase; startup used part of the existing prepaid balance. Settled per-pod usage not yet available."
+}

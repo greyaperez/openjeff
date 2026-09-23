@@ -1,0 +1,27 @@
+{
+  "selection_split": "development",
+  "metric": "raw NLL",
+  "weights": [
+    {
+      "weight_diffusion": 0,
+      "development_nll": 0.041497244790259916
+    },
+    {
+      "weight_diffusion": 0.25,
+      "development_nll": 0.1137202072221937
+    },
+    {
+      "weight_diffusion": 0.5,
+      "development_nll": 0.20959726657740368
+    },
+    {
+      "weight_diffusion": 0.75,
+      "development_nll": 0.3478199986685254
+    },
+    {
+      "weight_diffusion": 1,
+      "development_nll": 0.6746004189332793
+    }
+  ],
+  "selected_weight_diffusion": 0
+}

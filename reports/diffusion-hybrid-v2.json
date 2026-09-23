@@ -1,0 +1,53 @@
+{
+  "status": "completed_and_validated",
+  "protocol_sha256": "7dc6f3ca05274e2cc07ac8798f5239138454e4e9a7acc1e3e7c04c16a13b4bf8",
+  "frozen_utc": "2026-09-23T05:23:41.165866+00:00",
+  "previous_attempt": "reports/diffusion-attempt.json",
+  "cash_authorization_total_usd": 200,
+  "prior_cash_paid_usd": 10,
+  "initial_additional_cash_limit_usd": 30,
+  "original_adapter_unchanged": true,
+  "maximum_single_rental_hours": 3,
+  "protocol_refrozen_utc": "2026-09-23T10:02:04.976247+00:00",
+  "protocol_update": "Added AR evidence-wrapper-only control before any diffusion or hybrid scores.",
+  "cash_paid_total_usd": 60,
+  "execution_deviations": [
+    "Browser tool upload stalled 4.16 hours, failed first watchdog, no model scores; disclosed and recorded.",
+    "Revised foreground supervisor stopped next B300 automatically after five-minute upload timeout; disk backup proved no workload ran.",
+    "B200/B300 availability changed; H200 with CUDA 13 selected for exact same pinned model and scoring protocol.",
+    "Changed upload to authenticated direct SSH/SCP after verifying existing key, avoiding browser upload stalls.",
+    "Initial added-credit estimate exceeded due failed rental; explicit 200 USD cap remains, total confirmed purchases 60 USD.",
+    "Local Python 3.10 calibration recomputation differed from cloud by 6.1e-7 relative in one temperature; fit NLL difference 3.5e-17. Preserve cloud artifact; validator now also checks tight temperature, NLL and probability tolerances. No inference, selection, or held-out thresholds changed."
+  ],
+  "h200_initial_setup": {
+    "status": "failed_port_collision_no_scores",
+    "gpu": "NVIDIA H200",
+    "driver": "580.159.03",
+    "vendor_tests_passed": 183,
+    "failure": "Runpod template nginx listened on 8001; fixed to loopback 19001 with JSON model-identity readiness.",
+    "automatic_stop_confirmed": true,
+    "logs_backed_up": true
+  },
+  "latest_bundle_sha256": "2f5d566678cbc63c25757091254e01d770d188326e1dacd2846e24a682d4cb6a",
+  "runtime_adjustment": "Dedicated loopback model port 19001; DJEV_UPSTREAM points to it; exact pinned model/vLLM/source hashes unchanged. Readiness now requires JSON dgemma model response. Failed prior project renamed and retained on volume.",
+  "failed_b200_attempt": {
+    "stop_control": "Detached standard-library own-pod GraphQL stop, followed by normal /start.sh in parent; no CLI config; local tests passed; cloud startup arm awaiting verification.",
+    "approval_history": "Saving a blank startup override was rejected. Replaced it with an automatic absolute-deadline shutdown and verified 31.65 USD credit covers the three-hour rental.",
+    "browser_call_wall_seconds": 14965.3379,
+    "observed_utc": "2026-09-23T09:42:19.915728+00:00",
+    "deadline_stop_success": false,
+    "model_scored": false,
+    "followup": "Diagnose real cloud stop before further substantial rental; automatically launch workload without terminal UI dependence."
+  },
+  "model_scored": true,
+  "approx_consumption_usd": 35.84,
+  "active_billable_resources": 0,
+  "stop_control": "Foreground supervisor tested on CPU twice, B300 upload cutoff, and first failed H200 setup. Completed run manually stopped and terminated after full volume backup.",
+  "score_rows_per_arm": 2631,
+  "model_scored_arms": 5,
+  "derived_fusion_arms": 1,
+  "results": "reports/hybrid-v2-results.json",
+  "result_export_sha256": "b6e2bad3cbac37e551d4c858a0b421b1c85bd97753d1361d519a5cc6649653db",
+  "completed_utc": "2026-09-23T11:26:24.810195+00:00",
+  "conclusion": "Mixed gains: calibrated public probabilities improve, accuracy falls on public data, synthetic gain is small and matched by controls. Keep AR default; retain reproducible experimental guidance harness."
+}

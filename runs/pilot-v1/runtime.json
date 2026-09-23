@@ -1,0 +1,103 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+  "prompt": "codes-v1",
+  "max_tokens": 1536,
+  "torch": "2.8.0+cu128",
+  "transformers": "5.17.0",
+  "peft": "0.21.0",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "dtype": "bf16",
+  "attention": "sdpa",
+  "chat_template_sha256": "cbb183968c17e17d9b4c509511b2c7e5d509c3f042a19d8b85069c43d22b5a38",
+  "evaluation_batch_size": 1,
+  "training": {
+    "out": "runs/pilot-v1",
+    "data": "data/curriculum-v1",
+    "microbatch": 4,
+    "accumulation": 4,
+    "steps": 500,
+    "max_seconds": 4500,
+    "download": true,
+    "seed": 230923,
+    "lr": 0.0001,
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "trainable_parameters": 21331968,
+    "gradient_checkpointing": false
+  },
+  "dataset_manifest": {
+    "version": "openjeff-curriculum-v1",
+    "license": "Apache-2.0",
+    "families": [
+      "sum_threshold",
+      "table_extremum",
+      "policy_precedence",
+      "verified_consent",
+      "interval_overlap",
+      "deadline",
+      "entailment",
+      "source_authority",
+      "boolean_rule",
+      "ordinal_band",
+      "pairwise_preference",
+      "ranking",
+      "rubric",
+      "entity_resolution",
+      "schema_validation",
+      "unit_conversion",
+      "route_graph",
+      "access_matrix",
+      "injection_override",
+      "record_lookup"
+    ],
+    "teacher_ids": [],
+    "files": [
+      {
+        "path": "train.jsonl",
+        "rows": 8000,
+        "bytes": 8959383,
+        "sha256": "cfe80431551ba0475a68311e6b6d22f9b9058697cc3870818ffa1f06156de48e"
+      },
+      {
+        "path": "development.jsonl",
+        "rows": 400,
+        "bytes": 454540,
+        "sha256": "6b8b07e864bbf97a37113b1ddf206a9356ae6f52bf78b47af8398d2ef45d1828"
+      },
+      {
+        "path": "calibration_fit.jsonl",
+        "rows": 600,
+        "bytes": 689894,
+        "sha256": "d48570b5a4993e7e3741bd335cd619b2c84e20947fd6d49463ae4ce858196fae"
+      },
+      {
+        "path": "calibration_check.jsonl",
+        "rows": 400,
+        "bytes": 462908,
+        "sha256": "0cc4695647c53bfadf73035076c98368f2224791fd6bed6adf76d769b052a9d5"
+      },
+      {
+        "path": "final.jsonl",
+        "rows": 600,
+        "bytes": 702036,
+        "sha256": "5ef3801b55cfc4357103b89ecba590d5fb42ef8f1f6ca99cf273a198b912be5f"
+      },
+      {
+        "path": "adversarial.jsonl",
+        "rows": 200,
+        "bytes": 251524,
+        "sha256": "b5ae1ada6adab9ff7c7c367419c93a98ba8deb5a9bdaf2be6c2b80e1fb56e42c"
+      },
+      {
+        "path": "production_sim.jsonl",
+        "rows": 200,
+        "bytes": 237626,
+        "sha256": "0a9bc31c077e5079eefa662bb69d31f3189325f2c43141a50dd60b248d0b6ab2"
+      }
+    ],
+    "limitations": "Synthetic rule-grounded tasks. Shared generators across splits; new parameters and final wording are not a natural-language domain holdout."
+  },
+  "scope": "synthetic rule tasks; not JevBench"
+}

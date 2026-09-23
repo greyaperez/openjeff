@@ -1,0 +1,15 @@
+{
+  "selected_step": 500,
+  "dev_metrics": {
+    "n": 400,
+    "accuracy": 0.9825,
+    "nll": 0.04231256792875495,
+    "brier_sum_over_classes": 0.023264533929358025,
+    "ece": 0.01590073463547315,
+    "wrong_high_confidence_fraction": 0.0025,
+    "error_given_high_confidence": 0.002631578947368421,
+    "correct_low_confidence_fraction": 0.01
+  },
+  "rule": "highest development accuracy; lower NLL breaks ties",
+  "final_unopened": true
+}

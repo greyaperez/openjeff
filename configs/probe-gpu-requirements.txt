@@ -1,0 +1,7 @@
+# Candidate GPU runtime; GPU compatibility is not yet validated.
+# Install torch==2.8.0 from the official CUDA 12.8 wheel index first.
+# Use an isolated Python 3.10+ venv to avoid inherited torchvision conflicts.
+transformers==5.17.0
+huggingface-hub==1.32.0
+tokenizers==0.23.2
+safetensors==0.8.0

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "rows_verified": 462,
+  "benchmark_revision": "f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84",
+  "models": {
+    "base": {
+      "rows": 231,
+      "correct": 162
+    },
+    "adapter": {
+      "rows": 231,
+      "correct": 208
+    }
+  },
+  "checks": [
+    "public source checksums",
+    "exact public ID coverage",
+    "source labels",
+    "frozen temperature probabilities",
+    "upstream task scoring",
+    "tier accuracy and calibration",
+    "latency quantiles"
+  ]
+}

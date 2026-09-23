@@ -1,0 +1,68 @@
+{
+  "status": "metadata pins only; not a deployment approval",
+  "models": [
+    {
+      "id": "google/gemma-4-E2B-it",
+      "revision": "3e22461f65e89153144f8adb70e3b8c2cc9845a7",
+      "license_declared": "apache-2.0",
+      "weights_downloaded": false,
+      "weights_sha256": null
+    },
+    {
+      "id": "google/gemma-4-E4B-it",
+      "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+      "license_declared": "apache-2.0",
+      "weights_downloaded": false,
+      "weights_sha256": null
+    },
+    {
+      "id": "google/gemma-4-12B-it",
+      "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+      "license_declared": "apache-2.0",
+      "weights_downloaded": false,
+      "weights_sha256": null
+    },
+    {
+      "id": "google/gemma-4-26B-A4B-it",
+      "revision": "4d7ae4984b7db7de8f8457170b3f1a419ee76d52",
+      "license_declared": "apache-2.0",
+      "weights_downloaded": false,
+      "weights_sha256": null
+    },
+    {
+      "id": "google/gemma-4-31B-it",
+      "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+      "license_declared": "apache-2.0",
+      "weights_downloaded": false,
+      "weights_sha256": null
+    },
+    {
+      "id": "google/diffusiongemma-26B-A4B-it",
+      "revision": "f7f5b7f5fa82ffc52addd066915886d497f5517b",
+      "license_declared": "apache-2.0",
+      "weights_downloaded": false,
+      "weights_sha256": null
+    },
+    {
+      "id": "allenai/Olmo-3-7B-Instruct",
+      "revision": "6e5971d9eba42665f5bd5a0fcf047f299ce1dccc",
+      "license_declared": "apache-2.0",
+      "weights_downloaded": false,
+      "weights_sha256": null
+    },
+    {
+      "id": "allenai/Olmo-3.1-32B-Instruct",
+      "revision": "ac0587e4a7744a551c059d8cd17ba220bc940dae",
+      "license_declared": "apache-2.0",
+      "weights_downloaded": false,
+      "weights_sha256": null
+    },
+    {
+      "id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "revision": "bf77c3174f68ad409e1c2aa60daeb46e32d1c606",
+      "license_declared": "other",
+      "weights_downloaded": false,
+      "weights_sha256": null
+    }
+  ]
+}

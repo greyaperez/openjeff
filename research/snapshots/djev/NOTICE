@@ -1,0 +1,23 @@
+djev dev
+Copyright 2026 Djev contributors
+
+This project is licensed under the Apache License, Version 2.0.
+
+The runtime builds on vLLM (https://github.com/vllm-project/vllm),
+Copyright the vLLM contributors, Apache-2.0, and the structured-generation
+work by Matthew Mastracci and contributors
+(https://github.com/vllm-project/vllm/pull/57250,
+ https://github.com/mmastrac/vllm).
+
+Upstream runtime files are retrieved at the pinned revisions recorded in
+runtime/sources.json. Their copyright and license headers are retained.
+Djev's runtime modules apply additional modifications to those sources;
+the patch map is documented in docs/architecture.md.
+
+DiffusionGemma is developed by Google DeepMind. Model weights and tokenizer
+artifacts are not redistributed in this repository. Downloaded artifacts
+retain their own upstream license and notices. At publication, the official
+google/diffusiongemma-26B-A4B-it model card identifies Apache-2.0.
+
+Dependency licenses remain with their respective authors. This project is
+not endorsed by or affiliated with Google DeepMind or the vLLM project.

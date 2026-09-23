@@ -1,0 +1,53 @@
+{
+  "revision": "f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84",
+  "files": [
+    {
+      "path": "datasets/public/easy.jsonl",
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/datasets/public/easy.jsonl",
+      "sha256": "231df3c2c8e88a1a8c137ebe85de96ba70fabd330849098ac7b3c52c70b7172b",
+      "bytes": 37220
+    },
+    {
+      "path": "datasets/public/original.jsonl",
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/datasets/public/original.jsonl",
+      "sha256": "5c2414edb3006b8bfcb70fda433f0f9ca015759433849f8d3104328a1f7c4180",
+      "bytes": 57237
+    },
+    {
+      "path": "datasets/public/hard.jsonl",
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/datasets/public/hard.jsonl",
+      "sha256": "89e9e6becb33ed88c1de7d42dcc87531b2fb64cfaef4e1986faf7c37b3f80ebb",
+      "bytes": 651848
+    },
+    {
+      "path": "jevbench/metrics.py",
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/jevbench/metrics.py",
+      "sha256": "4038c8423ad1cf28601afb6babe777b71f08e379b9ca125b09b52c0ac7d60515",
+      "bytes": 5604
+    },
+    {
+      "path": "jevbench/runner.py",
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/jevbench/runner.py",
+      "sha256": "15dd3ab9b3c111f3f4f47b9d9b657fa87d0f0d52d208c79c6ecf64cbf88cba7d",
+      "bytes": 5287
+    },
+    {
+      "path": "jevbench/__init__.py",
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/jevbench/__init__.py",
+      "sha256": "64c28dc1534502c429a3b67eee79ab7909fab995b7d116c9b089f0f3bb8652f7",
+      "bytes": 433
+    },
+    {
+      "path": "jevbench/scoring.py",
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/jevbench/scoring.py",
+      "sha256": "6aa17d212ea20a3eeb6876149367842e8462c11dcb54d73df062fb406368331e",
+      "bytes": 5743
+    },
+    {
+      "path": "jevbench/tasks.py",
+      "url": "https://raw.githubusercontent.com/fstandhartinger/jevbench/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/jevbench/tasks.py",
+      "sha256": "b9c2f8ba9a7301519656d79d47c31b8ab0542a5545498ce3b339d5e93b976812",
+      "bytes": 4339
+    }
+  ]
+}

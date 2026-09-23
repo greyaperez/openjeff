@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+  "adapter_sha256": "a1811874542eb3b9ca4235d79826dfabb847f0c5ad076bfd25b5e4b2f426ba2b",
+  "gpu": "NVIDIA H200",
+  "torch": "2.13.0+cu130",
+  "transformers": "5.17.0",
+  "peft": "0.21.0",
+  "attention": "sdpa",
+  "max_tokens": 8192,
+  "guidance_code_sha256": "68a8e41523bfca9c9bdf53232882f5d637b35203b0463b4f99eb53a0902fec26",
+  "prompt": "codes-v1",
+  "self_guidance_batch_size": 8
+}

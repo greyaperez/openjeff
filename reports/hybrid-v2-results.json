@@ -1,0 +1,2214 @@
+{
+  "scope": "Inference-only structured diffusion guidance, no trained diffusion adapter or latent bridge. Frozen AR weights.",
+  "selected_weight_diffusion": 0,
+  "methods": {
+    "ar": {
+      "temperature": 1.1197247771148635,
+      "splits": {
+        "calibration_check": {
+          "raw": {
+            "n": 400,
+            "accuracy": 0.965,
+            "nll": 0.0618638431747509,
+            "brier_sum_over_classes": 0.03280904010922768,
+            "ece": 0.020535418857028184,
+            "wrong_high_confidence_fraction": 0.0025,
+            "error_given_high_confidence": 0.002631578947368421,
+            "correct_low_confidence_fraction": 0.01
+          },
+          "calibrated": {
+            "n": 400,
+            "accuracy": 0.965,
+            "nll": 0.05909482408095756,
+            "brier_sum_over_classes": 0.03233875045267233,
+            "ece": 0.019669479586189004,
+            "wrong_high_confidence_fraction": 0.0025,
+            "error_given_high_confidence": 0.002631578947368421,
+            "correct_low_confidence_fraction": 0.01
+          },
+          "serial_latency": {
+            "mean_s": 0.06633893473539501,
+            "p50_s": 0.06588019896298647,
+            "p95_s": 0.06881078146398067,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "final": {
+          "raw": {
+            "n": 600,
+            "accuracy": 0.975,
+            "nll": 0.05236000421569903,
+            "brier_sum_over_classes": 0.030921376512111246,
+            "ece": 0.010665861693710768,
+            "wrong_high_confidence_fraction": 0.0016666666666666668,
+            "error_given_high_confidence": 0.0017889087656529517,
+            "correct_low_confidence_fraction": 0.018333333333333333
+          },
+          "calibrated": {
+            "n": 600,
+            "accuracy": 0.975,
+            "nll": 0.05215534584272881,
+            "brier_sum_over_classes": 0.03124146142653111,
+            "ece": 0.010483284283603523,
+            "wrong_high_confidence_fraction": 0.0016666666666666668,
+            "error_given_high_confidence": 0.0017889087656529517,
+            "correct_low_confidence_fraction": 0.018333333333333333
+          },
+          "serial_latency": {
+            "mean_s": 0.0663106609803314,
+            "p50_s": 0.06572904996573925,
+            "p95_s": 0.0689091244712472,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "adversarial": {
+          "raw": {
+            "n": 200,
+            "accuracy": 0.97,
+            "nll": 0.05542849092122651,
+            "brier_sum_over_classes": 0.03661937093937883,
+            "ece": 0.016841722370613564,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.02
+          },
+          "calibrated": {
+            "n": 200,
+            "accuracy": 0.97,
+            "nll": 0.055312567435471305,
+            "brier_sum_over_classes": 0.036590593888076624,
+            "ece": 0.01700633839770873,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.02
+          },
+          "serial_latency": {
+            "mean_s": 0.06628062364645303,
+            "p50_s": 0.06615088414400816,
+            "p95_s": 0.0688460124656558,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "production_sim": {
+          "raw": {
+            "n": 200,
+            "accuracy": 0.98,
+            "nll": 0.03566553004119382,
+            "brier_sum_over_classes": 0.025109649704937866,
+            "ece": 0.011469029646949928,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.015
+          },
+          "calibrated": {
+            "n": 200,
+            "accuracy": 0.98,
+            "nll": 0.03575448596745181,
+            "brier_sum_over_classes": 0.025093121069796248,
+            "ece": 0.004938962736831288,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.015
+          },
+          "serial_latency": {
+            "mean_s": 0.06692894120700657,
+            "p50_s": 0.06585759529843926,
+            "p95_s": 0.06993614509701729,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "public": {
+          "raw": {
+            "n": 231,
+            "accuracy": 0.9090909090909091,
+            "nll": 0.47949766763664464,
+            "brier_sum_over_classes": 0.16524284855588398,
+            "ece": 0.05774594810956307,
+            "wrong_high_confidence_fraction": 0.047619047619047616,
+            "error_given_high_confidence": 0.057291666666666664,
+            "correct_low_confidence_fraction": 0.025974025974025976
+          },
+          "calibrated": {
+            "n": 231,
+            "accuracy": 0.9090909090909091,
+            "nll": 0.44337239147941326,
+            "brier_sum_over_classes": 0.16547319450943485,
+            "ece": 0.06340947932043546,
+            "wrong_high_confidence_fraction": 0.047619047619047616,
+            "error_given_high_confidence": 0.05759162303664921,
+            "correct_low_confidence_fraction": 0.025974025974025976
+          },
+          "serial_latency": {
+            "mean_s": 0.10576208632487755,
+            "p50_s": 0.06705625355243683,
+            "p95_s": 0.2750440984964371,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 10,
+            "mean": 0.20658177731405936
+          }
+        },
+        "final_no_normalized_train_match": {
+          "raw": {
+            "n": 403,
+            "accuracy": 0.9627791563275434,
+            "nll": 0.07608963628041172,
+            "brier_sum_over_classes": 0.04528647181484405,
+            "ece": 0.014469723306753234,
+            "wrong_high_confidence_fraction": 0.0024813895781637717,
+            "error_given_high_confidence": 0.0027397260273972603,
+            "correct_low_confidence_fraction": 0.02729528535980149
+          },
+          "calibrated": {
+            "n": 403,
+            "accuracy": 0.9627791563275434,
+            "nll": 0.07554593593363927,
+            "brier_sum_over_classes": 0.045603168231253315,
+            "ece": 0.01381544008356194,
+            "wrong_high_confidence_fraction": 0.0024813895781637717,
+            "error_given_high_confidence": 0.0027397260273972603,
+            "correct_low_confidence_fraction": 0.02729528535980149
+          },
+          "serial_latency": {
+            "mean_s": 0.06644978819105303,
+            "p50_s": 0.06585148070007563,
+            "p95_s": 0.06817960646003485,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "public_easy": {
+          "raw": {
+            "n": 48,
+            "accuracy": 1.0,
+            "nll": 3.3447089085393325e-07,
+            "brier_sum_over_classes": 4.471797662016005e-12,
+            "ece": 3.3446974667672436e-07,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0
+          },
+          "calibrated": {
+            "n": 48,
+            "accuracy": 1.0,
+            "nll": 1.4015784363404492e-06,
+            "brier_sum_over_classes": 5.417015960899002e-11,
+            "ece": 1.4015643338138872e-06,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0
+          },
+          "serial_latency": {
+            "mean_s": 0.06596999906469136,
+            "p50_s": 0.06592757115140557,
+            "p95_s": 0.06832195818424225,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 0,
+            "mean": null
+          }
+        },
+        "public_original": {
+          "raw": {
+            "n": 72,
+            "accuracy": 0.9861111111111112,
+            "nll": 0.09044915633998996,
+            "brier_sum_over_classes": 0.036964547174306285,
+            "ece": 0.03133294864041997,
+            "wrong_high_confidence_fraction": 0.013888888888888888,
+            "error_given_high_confidence": 0.014705882352941176,
+            "correct_low_confidence_fraction": 0.013888888888888888
+          },
+          "calibrated": {
+            "n": 72,
+            "accuracy": 0.9861111111111112,
+            "nll": 0.08621531293262688,
+            "brier_sum_over_classes": 0.0384392089793469,
+            "ece": 0.03276067457740746,
+            "wrong_high_confidence_fraction": 0.013888888888888888,
+            "error_given_high_confidence": 0.014705882352941176,
+            "correct_low_confidence_fraction": 0.013888888888888888
+          },
+          "serial_latency": {
+            "mean_s": 0.06552343825913137,
+            "p50_s": 0.0652238242328167,
+            "p95_s": 0.06719457544386387,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 0,
+            "mean": null
+          }
+        },
+        "public_hard": {
+          "raw": {
+            "n": 111,
+            "accuracy": 0.8198198198198198,
+            "nll": 0.9392036568737197,
+            "brier_sum_over_classes": 0.3199067623391394,
+            "ece": 0.10893269209246684,
+            "wrong_high_confidence_fraction": 0.09009009009009009,
+            "error_given_high_confidence": 0.13157894736842105,
+            "correct_low_confidence_fraction": 0.04504504504504504
+          },
+          "calibrated": {
+            "n": 111,
+            "accuracy": 0.8198198198198198,
+            "nll": 0.8667698434669404,
+            "brier_sum_over_classes": 0.31942959353663336,
+            "ece": 0.1203855946964789,
+            "wrong_high_confidence_fraction": 0.09009009009009009,
+            "error_given_high_confidence": 0.13333333333333333,
+            "correct_low_confidence_fraction": 0.04504504504504504
+          },
+          "serial_latency": {
+            "mean_s": 0.1490702201016583,
+            "p50_s": 0.10452549252659082,
+            "p95_s": 0.34919835068285465,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 10,
+            "mean": 0.20658177731405936
+          }
+        }
+      }
+    },
+    "ar_view": {
+      "temperature": 2.030288984185829,
+      "splits": {
+        "calibration_check": {
+          "raw": {
+            "n": 400,
+            "accuracy": 0.965,
+            "nll": 0.04809757413628191,
+            "brier_sum_over_classes": 0.035592911818113,
+            "ece": 0.018506683967494022,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0075
+          },
+          "calibrated": {
+            "n": 400,
+            "accuracy": 0.965,
+            "nll": 0.0438813763174005,
+            "brier_sum_over_classes": 0.030838668568574687,
+            "ece": 0.018421873565063585,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.01
+          },
+          "serial_latency": {
+            "mean_s": 0.0667783187655732,
+            "p50_s": 0.06590509926900268,
+            "p95_s": 0.06942142732441425,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "final": {
+          "raw": {
+            "n": 600,
+            "accuracy": 0.9783333333333334,
+            "nll": 0.03691369303473483,
+            "brier_sum_over_classes": 0.024670737348890272,
+            "ece": 0.009123326050071682,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.006666666666666667
+          },
+          "calibrated": {
+            "n": 600,
+            "accuracy": 0.9783333333333334,
+            "nll": 0.04100570197809825,
+            "brier_sum_over_classes": 0.025078187300030478,
+            "ece": 0.009810816153793388,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.013333333333333334
+          },
+          "serial_latency": {
+            "mean_s": 0.06649421993177385,
+            "p50_s": 0.06572374468669295,
+            "p95_s": 0.06941882893443108,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "adversarial": {
+          "raw": {
+            "n": 200,
+            "accuracy": 0.97,
+            "nll": 0.04965595664127449,
+            "brier_sum_over_classes": 0.03434425934787551,
+            "ece": 0.01851658688978962,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.015
+          },
+          "calibrated": {
+            "n": 200,
+            "accuracy": 0.97,
+            "nll": 0.05205616594180859,
+            "brier_sum_over_classes": 0.033177222305128894,
+            "ece": 0.021655297763869093,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.02
+          },
+          "serial_latency": {
+            "mean_s": 0.06666611957829445,
+            "p50_s": 0.06589041603729129,
+            "p95_s": 0.0704471105709672,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "production_sim": {
+          "raw": {
+            "n": 200,
+            "accuracy": 0.98,
+            "nll": 0.03057957850470718,
+            "brier_sum_over_classes": 0.021506712932701535,
+            "ece": 0.0059716052811938,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.01
+          },
+          "calibrated": {
+            "n": 200,
+            "accuracy": 0.98,
+            "nll": 0.03586785240766092,
+            "brier_sum_over_classes": 0.02280449632736582,
+            "ece": 0.0126548824802169,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.025
+          },
+          "serial_latency": {
+            "mean_s": 0.06775092699099332,
+            "p50_s": 0.06588666141033173,
+            "p95_s": 0.07618240267038345,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "public": {
+          "raw": {
+            "n": 231,
+            "accuracy": 0.8874458874458875,
+            "nll": 0.5098408534624425,
+            "brier_sum_over_classes": 0.176069879245951,
+            "ece": 0.06036308596306679,
+            "wrong_high_confidence_fraction": 0.03896103896103896,
+            "error_given_high_confidence": 0.046632124352331605,
+            "correct_low_confidence_fraction": 0.017316017316017316
+          },
+          "calibrated": {
+            "n": 231,
+            "accuracy": 0.8874458874458875,
+            "nll": 0.35305608170069597,
+            "brier_sum_over_classes": 0.1707166127691016,
+            "ece": 0.04054872780617756,
+            "wrong_high_confidence_fraction": 0.025974025974025976,
+            "error_given_high_confidence": 0.03428571428571429,
+            "correct_low_confidence_fraction": 0.047619047619047616
+          },
+          "serial_latency": {
+            "mean_s": 0.12506153914287235,
+            "p50_s": 0.06764078978449106,
+            "p95_s": 0.3466142825782299,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 10,
+            "mean": 0.14655742698342225
+          }
+        },
+        "final_no_normalized_train_match": {
+          "raw": {
+            "n": 403,
+            "accuracy": 0.9702233250620348,
+            "nll": 0.04952052295925707,
+            "brier_sum_over_classes": 0.033722713421714345,
+            "ece": 0.01089010693436666,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.007444168734491315
+          },
+          "calibrated": {
+            "n": 403,
+            "accuracy": 0.9702233250620348,
+            "nll": 0.05277291022329957,
+            "brier_sum_over_classes": 0.03343593266774974,
+            "ece": 0.011178296596447139,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.017369727047146403
+          },
+          "serial_latency": {
+            "mean_s": 0.06652542536676152,
+            "p50_s": 0.06591458152979612,
+            "p95_s": 0.06846459954977036,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "public_easy": {
+          "raw": {
+            "n": 48,
+            "accuracy": 0.9791666666666666,
+            "nll": 0.06792967841178744,
+            "brier_sum_over_classes": 0.0364217575807167,
+            "ece": 0.016524650776882324,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.041666666666666664
+          },
+          "calibrated": {
+            "n": 48,
+            "accuracy": 0.9791666666666666,
+            "nll": 0.0784684996255903,
+            "brier_sum_over_classes": 0.041322189362839865,
+            "ece": 0.03415059739225358,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.041666666666666664
+          },
+          "serial_latency": {
+            "mean_s": 0.06688131036935374,
+            "p50_s": 0.06690638698637486,
+            "p95_s": 0.06872828211635351,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 0,
+            "mean": null
+          }
+        },
+        "public_original": {
+          "raw": {
+            "n": 72,
+            "accuracy": 0.9583333333333334,
+            "nll": 0.15087013310905292,
+            "brier_sum_over_classes": 0.05530118589310316,
+            "ece": 0.035606663948283906,
+            "wrong_high_confidence_fraction": 0.013888888888888888,
+            "error_given_high_confidence": 0.014705882352941176,
+            "correct_low_confidence_fraction": 0.0
+          },
+          "calibrated": {
+            "n": 72,
+            "accuracy": 0.9583333333333334,
+            "nll": 0.10265797778621168,
+            "brier_sum_over_classes": 0.054999449860884016,
+            "ece": 0.021212307508487765,
+            "wrong_high_confidence_fraction": 0.013888888888888888,
+            "error_given_high_confidence": 0.014705882352941176,
+            "correct_low_confidence_fraction": 0.013888888888888888
+          },
+          "serial_latency": {
+            "mean_s": 0.06623380209526254,
+            "p50_s": 0.06614251853898168,
+            "p95_s": 0.06751816906034946,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 0,
+            "mean": null
+          }
+        },
+        "public_hard": {
+          "raw": {
+            "n": 111,
+            "accuracy": 0.8018018018018018,
+            "nll": 0.9337834504703298,
+            "brier_sum_over_classes": 0.31479470592465647,
+            "ece": 0.1116388973984774,
+            "wrong_high_confidence_fraction": 0.07207207207207207,
+            "error_given_high_confidence": 0.1,
+            "correct_low_confidence_fraction": 0.018018018018018018
+          },
+          "calibrated": {
+            "n": 111,
+            "accuracy": 0.8018018018018018,
+            "nll": 0.6342170494614882,
+            "brier_sum_over_classes": 0.3017307393717342,
+            "ece": 0.08539368159859488,
+            "wrong_high_confidence_fraction": 0.04504504504504504,
+            "error_given_high_confidence": 0.08064516129032258,
+            "correct_low_confidence_fraction": 0.07207207207207207
+          },
+          "serial_latency": {
+            "mean_s": 0.18837908912987053,
+            "p50_s": 0.1479388577863574,
+            "p95_s": 0.39739740919321775,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 10,
+            "mean": 0.14655742698342225
+          }
+        }
+      }
+    },
+    "diffusion": {
+      "temperature": 1.6213176595786478,
+      "splits": {
+        "calibration_check": {
+          "raw": {
+            "n": 400,
+            "accuracy": 0.7575,
+            "nll": 0.6933600264040557,
+            "brier_sum_over_classes": 0.36547150662191796,
+            "ece": 0.11684142756042828,
+            "wrong_high_confidence_fraction": 0.06,
+            "error_given_high_confidence": 0.10344827586206896,
+            "correct_low_confidence_fraction": 0.065
+          },
+          "calibrated": {
+            "n": 400,
+            "accuracy": 0.7575,
+            "nll": 0.6158282755880329,
+            "brier_sum_over_classes": 0.34328177466202325,
+            "ece": 0.07913129420564993,
+            "wrong_high_confidence_fraction": 0.02,
+            "error_given_high_confidence": 0.04878048780487805,
+            "correct_low_confidence_fraction": 0.1475
+          },
+          "serial_latency": {
+            "mean_s": 0.045879994069691746,
+            "p50_s": 0.04428963037207723,
+            "p95_s": 0.05275376420468092,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "final": {
+          "raw": {
+            "n": 600,
+            "accuracy": 0.7633333333333333,
+            "nll": 0.7065223516106603,
+            "brier_sum_over_classes": 0.3483150633509954,
+            "ece": 0.10427988582627296,
+            "wrong_high_confidence_fraction": 0.056666666666666664,
+            "error_given_high_confidence": 0.09042553191489362,
+            "correct_low_confidence_fraction": 0.05
+          },
+          "calibrated": {
+            "n": 600,
+            "accuracy": 0.7633333333333333,
+            "nll": 0.6110997211666652,
+            "brier_sum_over_classes": 0.32385794214412456,
+            "ece": 0.05290907356288637,
+            "wrong_high_confidence_fraction": 0.011666666666666667,
+            "error_given_high_confidence": 0.025925925925925925,
+            "correct_low_confidence_fraction": 0.09666666666666666
+          },
+          "serial_latency": {
+            "mean_s": 0.04690692009869963,
+            "p50_s": 0.04530071187764406,
+            "p95_s": 0.05362550262361765,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "adversarial": {
+          "raw": {
+            "n": 200,
+            "accuracy": 0.765,
+            "nll": 0.7531803155486827,
+            "brier_sum_over_classes": 0.3641926391730146,
+            "ece": 0.13704699391529068,
+            "wrong_high_confidence_fraction": 0.07,
+            "error_given_high_confidence": 0.11764705882352941,
+            "correct_low_confidence_fraction": 0.04
+          },
+          "calibrated": {
+            "n": 200,
+            "accuracy": 0.765,
+            "nll": 0.6529899142732961,
+            "brier_sum_over_classes": 0.34632424491949637,
+            "ece": 0.09771813117579688,
+            "wrong_high_confidence_fraction": 0.015,
+            "error_given_high_confidence": 0.039473684210526314,
+            "correct_low_confidence_fraction": 0.11
+          },
+          "serial_latency": {
+            "mean_s": 0.04800601843278855,
+            "p50_s": 0.04657871136441827,
+            "p95_s": 0.05465460475534201,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "production_sim": {
+          "raw": {
+            "n": 200,
+            "accuracy": 0.735,
+            "nll": 0.7157947959468687,
+            "brier_sum_over_classes": 0.36613774244677877,
+            "ece": 0.11442921673806566,
+            "wrong_high_confidence_fraction": 0.035,
+            "error_given_high_confidence": 0.06086956521739131,
+            "correct_low_confidence_fraction": 0.055
+          },
+          "calibrated": {
+            "n": 200,
+            "accuracy": 0.735,
+            "nll": 0.6350507788565918,
+            "brier_sum_over_classes": 0.33875757391914546,
+            "ece": 0.07250568250140668,
+            "wrong_high_confidence_fraction": 0.015,
+            "error_given_high_confidence": 0.039473684210526314,
+            "correct_low_confidence_fraction": 0.12
+          },
+          "serial_latency": {
+            "mean_s": 0.04676706009544432,
+            "p50_s": 0.044682339765131474,
+            "p95_s": 0.054540772922337055,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "public": {
+          "raw": {
+            "n": 231,
+            "accuracy": 0.8354978354978355,
+            "nll": 0.5616498286660598,
+            "brier_sum_over_classes": 0.24222068351921394,
+            "ece": 0.09597486883889784,
+            "wrong_high_confidence_fraction": 0.047619047619047616,
+            "error_given_high_confidence": 0.06043956043956044,
+            "correct_low_confidence_fraction": 0.025974025974025976
+          },
+          "calibrated": {
+            "n": 231,
+            "accuracy": 0.8354978354978355,
+            "nll": 0.44849951631054075,
+            "brier_sum_over_classes": 0.2253032461202676,
+            "ece": 0.04326236208737021,
+            "wrong_high_confidence_fraction": 0.030303030303030304,
+            "error_given_high_confidence": 0.043478260869565216,
+            "correct_low_confidence_fraction": 0.047619047619047616
+          },
+          "serial_latency": {
+            "mean_s": 0.06712411545636333,
+            "p50_s": 0.04664038587361574,
+            "p95_s": 0.16335834749042988,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 10,
+            "mean": 0.21521016192505835
+          }
+        },
+        "final_no_normalized_train_match": {
+          "raw": {
+            "n": 403,
+            "accuracy": 0.7593052109181141,
+            "nll": 0.7143052824423568,
+            "brier_sum_over_classes": 0.3692883241022667,
+            "ece": 0.11946742959931692,
+            "wrong_high_confidence_fraction": 0.06451612903225806,
+            "error_given_high_confidence": 0.1145374449339207,
+            "correct_low_confidence_fraction": 0.05955334987593052
+          },
+          "calibrated": {
+            "n": 403,
+            "accuracy": 0.7593052109181141,
+            "nll": 0.6191589160892957,
+            "brier_sum_over_classes": 0.34902940873657273,
+            "ece": 0.06417836734505616,
+            "wrong_high_confidence_fraction": 0.01488833746898263,
+            "error_given_high_confidence": 0.040268456375838924,
+            "correct_low_confidence_fraction": 0.12406947890818859
+          },
+          "serial_latency": {
+            "mean_s": 0.0470681314543814,
+            "p50_s": 0.046732086688280106,
+            "p95_s": 0.053337810561060905,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "public_easy": {
+          "raw": {
+            "n": 48,
+            "accuracy": 1.0,
+            "nll": 0.000833491204143594,
+            "brier_sum_over_classes": 8.882583042087184e-06,
+            "ece": 0.0008310598859458951,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0
+          },
+          "calibrated": {
+            "n": 48,
+            "accuracy": 1.0,
+            "nll": 0.012418890358296186,
+            "brier_sum_over_classes": 0.0005332853905318269,
+            "ece": 0.012237819926450566,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0
+          },
+          "serial_latency": {
+            "mean_s": 0.04391945632717883,
+            "p50_s": 0.04386361036449671,
+            "p95_s": 0.047167702578008175,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 0,
+            "mean": null
+          }
+        },
+        "public_original": {
+          "raw": {
+            "n": 72,
+            "accuracy": 0.9861111111111112,
+            "nll": 0.037301364468239645,
+            "brier_sum_over_classes": 0.02089711273078993,
+            "ece": 0.020813892392708287,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0
+          },
+          "calibrated": {
+            "n": 72,
+            "accuracy": 0.9861111111111112,
+            "nll": 0.07169711966585182,
+            "brier_sum_over_classes": 0.025513589862774053,
+            "ece": 0.05276587965082865,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0
+          },
+          "serial_latency": {
+            "mean_s": 0.04266596317756921,
+            "p50_s": 0.042591631412506104,
+            "p95_s": 0.04590301774442196,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 0,
+            "mean": null
+          }
+        },
+        "public_hard": {
+          "raw": {
+            "n": 111,
+            "accuracy": 0.6666666666666666,
+            "nll": 1.1442829243454746,
+            "brier_sum_over_classes": 0.4905221568678877,
+            "ece": 0.2009229414581964,
+            "wrong_high_confidence_fraction": 0.0990990990990991,
+            "error_given_high_confidence": 0.16923076923076924,
+            "correct_low_confidence_fraction": 0.05405405405405406
+          },
+          "calibrated": {
+            "n": 111,
+            "accuracy": 0.6666666666666666,
+            "nll": 0.8814872875188773,
+            "brier_sum_over_classes": 0.45209435752177074,
+            "ece": 0.12128107108003727,
+            "wrong_high_confidence_fraction": 0.06306306306306306,
+            "error_given_high_confidence": 0.1320754716981132,
+            "correct_low_confidence_fraction": 0.0990990990990991
+          },
+          "serial_latency": {
+            "mean_s": 0.09302331007144472,
+            "p50_s": 0.06330914050340652,
+            "p95_s": 0.18925200402736664,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 10,
+            "mean": 0.21521016192505835
+          }
+        }
+      }
+    },
+    "diffusion_guided_ar": {
+      "temperature": 2.017606770506028,
+      "splits": {
+        "calibration_check": {
+          "raw": {
+            "n": 400,
+            "accuracy": 0.9475,
+            "nll": 0.07189483830559029,
+            "brier_sum_over_classes": 0.05027927552160953,
+            "ece": 0.02807781359211056,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.01
+          },
+          "calibrated": {
+            "n": 400,
+            "accuracy": 0.9475,
+            "nll": 0.0692842497197731,
+            "brier_sum_over_classes": 0.04587524792051235,
+            "ece": 0.02175205690142791,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0175
+          },
+          "serial_latency": {
+            "mean_s": 0.12271721781231464,
+            "p50_s": 0.12173753371462226,
+            "p95_s": 0.1311920704320073,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "final": {
+          "raw": {
+            "n": 600,
+            "accuracy": 0.98,
+            "nll": 0.045801256313351024,
+            "brier_sum_over_classes": 0.02751200807941189,
+            "ece": 0.012133909052977853,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.01
+          },
+          "calibrated": {
+            "n": 600,
+            "accuracy": 0.98,
+            "nll": 0.047770041237254826,
+            "brier_sum_over_classes": 0.027154688946115245,
+            "ece": 0.012242987490942644,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.018333333333333333
+          },
+          "serial_latency": {
+            "mean_s": 0.12409246880561113,
+            "p50_s": 0.12277484079822898,
+            "p95_s": 0.13270447961986065,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "adversarial": {
+          "raw": {
+            "n": 200,
+            "accuracy": 0.965,
+            "nll": 0.045285038586292965,
+            "brier_sum_over_classes": 0.033446119244403744,
+            "ece": 0.02186595252071408,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0
+          },
+          "calibrated": {
+            "n": 200,
+            "accuracy": 0.965,
+            "nll": 0.04515845105649666,
+            "brier_sum_over_classes": 0.029776375967047214,
+            "ece": 0.01926374426253681,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.005
+          },
+          "serial_latency": {
+            "mean_s": 0.12947830467950552,
+            "p50_s": 0.12708315253257751,
+            "p95_s": 0.16226274333894253,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "production_sim": {
+          "raw": {
+            "n": 200,
+            "accuracy": 0.975,
+            "nll": 0.0481625672464832,
+            "brier_sum_over_classes": 0.03217260616746634,
+            "ece": 0.019448570801526982,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.02
+          },
+          "calibrated": {
+            "n": 200,
+            "accuracy": 0.975,
+            "nll": 0.054332534610325015,
+            "brier_sum_over_classes": 0.03420191928827952,
+            "ece": 0.021421886748499666,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.03
+          },
+          "serial_latency": {
+            "mean_s": 0.12493797076400369,
+            "p50_s": 0.12151339091360569,
+            "p95_s": 0.13653947226703167,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "public": {
+          "raw": {
+            "n": 231,
+            "accuracy": 0.8961038961038961,
+            "nll": 0.48121270205492844,
+            "brier_sum_over_classes": 0.16428541505398075,
+            "ece": 0.06583131539387146,
+            "wrong_high_confidence_fraction": 0.03896103896103896,
+            "error_given_high_confidence": 0.04433497536945813,
+            "correct_low_confidence_fraction": 0.017316017316017316
+          },
+          "calibrated": {
+            "n": 231,
+            "accuracy": 0.8961038961038961,
+            "nll": 0.3181492479643363,
+            "brier_sum_over_classes": 0.1515041218328687,
+            "ece": 0.033472049348341845,
+            "wrong_high_confidence_fraction": 0.021645021645021644,
+            "error_given_high_confidence": 0.02717391304347826,
+            "correct_low_confidence_fraction": 0.030303030303030304
+          },
+          "serial_latency": {
+            "mean_s": 0.2186451569457591,
+            "p50_s": 0.13051178585737944,
+            "p95_s": 0.558483075350523,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 10,
+            "mean": 0.18070383913018254
+          }
+        },
+        "final_no_normalized_train_match": {
+          "raw": {
+            "n": 403,
+            "accuracy": 0.9751861042183623,
+            "nll": 0.05020846411277406,
+            "brier_sum_over_classes": 0.033827312928425175,
+            "ece": 0.015461937811053669,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.01488833746898263
+          },
+          "calibrated": {
+            "n": 403,
+            "accuracy": 0.9751861042183623,
+            "nll": 0.05544354525409625,
+            "brier_sum_over_classes": 0.034699744215045555,
+            "ece": 0.01945272285301251,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.02729528535980149
+          },
+          "serial_latency": {
+            "mean_s": 0.12483024190205425,
+            "p50_s": 0.12459694035351276,
+            "p95_s": 0.13330932520329952,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "public_easy": {
+          "raw": {
+            "n": 48,
+            "accuracy": 0.9791666666666666,
+            "nll": 0.026929417257839483,
+            "brier_sum_over_classes": 0.014757233673743922,
+            "ece": 0.0074310777162153955,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0
+          },
+          "calibrated": {
+            "n": 48,
+            "accuracy": 0.9791666666666666,
+            "nll": 0.02964079266263034,
+            "brier_sum_over_classes": 0.015186995509614602,
+            "ece": 0.006132420417599872,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0
+          },
+          "serial_latency": {
+            "mean_s": 0.13080779558125263,
+            "p50_s": 0.12954425485804677,
+            "p95_s": 0.13602754566818476,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 0,
+            "mean": null
+          }
+        },
+        "public_original": {
+          "raw": {
+            "n": 72,
+            "accuracy": 0.9861111111111112,
+            "nll": 0.12528056050087774,
+            "brier_sum_over_classes": 0.03392141270082081,
+            "ece": 0.02030312283938112,
+            "wrong_high_confidence_fraction": 0.013888888888888888,
+            "error_given_high_confidence": 0.014084507042253521,
+            "correct_low_confidence_fraction": 0.013888888888888888
+          },
+          "calibrated": {
+            "n": 72,
+            "accuracy": 0.9861111111111112,
+            "nll": 0.0705256095384061,
+            "brier_sum_over_classes": 0.03369753406948729,
+            "ece": 0.017049419159645435,
+            "wrong_high_confidence_fraction": 0.013888888888888888,
+            "error_given_high_confidence": 0.014084507042253521,
+            "correct_low_confidence_fraction": 0.013888888888888888
+          },
+          "serial_latency": {
+            "mean_s": 0.1272677925363597,
+            "p50_s": 0.1281859497539699,
+            "p95_s": 0.13085848838090897,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 0,
+            "mean": null
+          }
+        },
+        "public_hard": {
+          "raw": {
+            "n": 111,
+            "accuracy": 0.8018018018018018,
+            "nll": 0.9085344305427834,
+            "brier_sum_over_classes": 0.3135066842042409,
+            "ece": 0.12909906039820312,
+            "wrong_high_confidence_fraction": 0.07207207207207207,
+            "error_given_high_confidence": 0.09411764705882353,
+            "correct_low_confidence_fraction": 0.02702702702702703
+          },
+          "calibrated": {
+            "n": 111,
+            "accuracy": 0.8018018018018018,
+            "nll": 0.6035303995062179,
+            "brier_sum_over_classes": 0.28686715230565835,
+            "ece": 0.06152595937655099,
+            "wrong_high_confidence_fraction": 0.036036036036036036,
+            "error_given_high_confidence": 0.06060606060606061,
+            "correct_low_confidence_fraction": 0.05405405405405406
+          },
+          "serial_latency": {
+            "mean_s": 0.3159006847202912,
+            "p50_s": 0.2498789457604289,
+            "p95_s": 0.6564550409093499,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 10,
+            "mean": 0.18070383913018254
+          }
+        }
+      }
+    },
+    "ar_guided_ar": {
+      "temperature": 2.002682068628046,
+      "splits": {
+        "calibration_check": {
+          "raw": {
+            "n": 400,
+            "accuracy": 0.95,
+            "nll": 0.06585459944586255,
+            "brier_sum_over_classes": 0.045368086332327986,
+            "ece": 0.025781987630272424,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0075
+          },
+          "calibrated": {
+            "n": 400,
+            "accuracy": 0.95,
+            "nll": 0.06319065741033009,
+            "brier_sum_over_classes": 0.04122395473019882,
+            "ece": 0.024618450574443666,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0125
+          },
+          "serial_latency": {
+            "mean_s": 0.22796938311774284,
+            "p50_s": 0.21791018126532435,
+            "p95_s": 0.334092715755105,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "final": {
+          "raw": {
+            "n": 600,
+            "accuracy": 0.9816666666666667,
+            "nll": 0.033899516982605855,
+            "brier_sum_over_classes": 0.02231258085735059,
+            "ece": 0.010642998069990995,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.011666666666666667
+          },
+          "calibrated": {
+            "n": 600,
+            "accuracy": 0.9816666666666667,
+            "nll": 0.03996277649672001,
+            "brier_sum_over_classes": 0.024193635108178575,
+            "ece": 0.016192440405078844,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.02
+          },
+          "serial_latency": {
+            "mean_s": 0.2333144245358805,
+            "p50_s": 0.22368940338492393,
+            "p95_s": 0.3428789312019944,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "adversarial": {
+          "raw": {
+            "n": 200,
+            "accuracy": 0.975,
+            "nll": 0.04342058589699306,
+            "brier_sum_over_classes": 0.03129587441618585,
+            "ece": 0.022564055132430944,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.01
+          },
+          "calibrated": {
+            "n": 200,
+            "accuracy": 0.975,
+            "nll": 0.04488661660334703,
+            "brier_sum_over_classes": 0.028940667265022136,
+            "ece": 0.020310442900207414,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.015
+          },
+          "serial_latency": {
+            "mean_s": 0.2944477274501696,
+            "p50_s": 0.28374020103365183,
+            "p95_s": 0.4131579315289855,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "production_sim": {
+          "raw": {
+            "n": 200,
+            "accuracy": 0.965,
+            "nll": 0.06059744240625088,
+            "brier_sum_over_classes": 0.040812994597978845,
+            "ece": 0.01470839487650779,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.015
+          },
+          "calibrated": {
+            "n": 200,
+            "accuracy": 0.965,
+            "nll": 0.06440203788650804,
+            "brier_sum_over_classes": 0.04128295906383629,
+            "ece": 0.01855057052266353,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.03
+          },
+          "serial_latency": {
+            "mean_s": 0.23261389494407922,
+            "p50_s": 0.21792642958462238,
+            "p95_s": 0.35501180589199066,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "public": {
+          "raw": {
+            "n": 231,
+            "accuracy": 0.8874458874458875,
+            "nll": 0.5016140516342964,
+            "brier_sum_over_classes": 0.17665535443939243,
+            "ece": 0.05886943553516532,
+            "wrong_high_confidence_fraction": 0.03896103896103896,
+            "error_given_high_confidence": 0.046153846153846156,
+            "correct_low_confidence_fraction": 0.017316017316017316
+          },
+          "calibrated": {
+            "n": 231,
+            "accuracy": 0.8874458874458875,
+            "nll": 0.35154905523799934,
+            "brier_sum_over_classes": 0.17034039810582535,
+            "ece": 0.046209837973303594,
+            "wrong_high_confidence_fraction": 0.025974025974025976,
+            "error_given_high_confidence": 0.034482758620689655,
+            "correct_low_confidence_fraction": 0.04329004329004329
+          },
+          "serial_latency": {
+            "mean_s": 1.005272682615076,
+            "p50_s": 0.4603945780545473,
+            "p95_s": 3.2539651542901993,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 10,
+            "mean": 0.14742459496388102
+          }
+        },
+        "final_no_normalized_train_match": {
+          "raw": {
+            "n": 403,
+            "accuracy": 0.9751861042183623,
+            "nll": 0.04585551846637358,
+            "brier_sum_over_classes": 0.030712251062046867,
+            "ece": 0.014544848297622363,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.01488833746898263
+          },
+          "calibrated": {
+            "n": 403,
+            "accuracy": 0.9751861042183623,
+            "nll": 0.05248718383783427,
+            "brier_sum_over_classes": 0.032614872376078866,
+            "ece": 0.02327646200335244,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.02729528535980149
+          },
+          "serial_latency": {
+            "mean_s": 0.23675062306336225,
+            "p50_s": 0.22418772336095572,
+            "p95_s": 0.34519729670137167,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "public_easy": {
+          "raw": {
+            "n": 48,
+            "accuracy": 0.9791666666666666,
+            "nll": 0.056816891212923985,
+            "brier_sum_over_classes": 0.03066316220487165,
+            "ece": 0.012520226840071738,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.020833333333333332
+          },
+          "calibrated": {
+            "n": 48,
+            "accuracy": 0.9791666666666666,
+            "nll": 0.067218237465634,
+            "brier_sum_over_classes": 0.03605614102327778,
+            "ece": 0.017945782105592525,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.041666666666666664
+          },
+          "serial_latency": {
+            "mean_s": 0.4386807924020104,
+            "p50_s": 0.44478720612823963,
+            "p95_s": 0.48651154339313507,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 0,
+            "mean": null
+          }
+        },
+        "public_original": {
+          "raw": {
+            "n": 72,
+            "accuracy": 0.9583333333333334,
+            "nll": 0.1636975291243273,
+            "brier_sum_over_classes": 0.06284483477557919,
+            "ece": 0.046307517231978054,
+            "wrong_high_confidence_fraction": 0.013888888888888888,
+            "error_given_high_confidence": 0.014925373134328358,
+            "correct_low_confidence_fraction": 0.027777777777777776
+          },
+          "calibrated": {
+            "n": 72,
+            "accuracy": 0.9583333333333334,
+            "nll": 0.12417611367534172,
+            "brier_sum_over_classes": 0.06623672945885942,
+            "ece": 0.045797204770536684,
+            "wrong_high_confidence_fraction": 0.013888888888888888,
+            "error_given_high_confidence": 0.014925373134328358,
+            "correct_low_confidence_fraction": 0.027777777777777776
+          },
+          "serial_latency": {
+            "mean_s": 0.41991282478233594,
+            "p50_s": 0.4106776542030275,
+            "p95_s": 0.4707931010052562,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 0,
+            "mean": null
+          }
+        },
+        "public_hard": {
+          "raw": {
+            "n": 111,
+            "accuracy": 0.8018018018018018,
+            "nll": 0.9131478653364915,
+            "brier_sum_over_classes": 0.31361015302544243,
+            "ece": 0.11850986541715902,
+            "wrong_high_confidence_fraction": 0.07207207207207207,
+            "error_given_high_confidence": 0.0963855421686747,
+            "correct_low_confidence_fraction": 0.009009009009009009
+          },
+          "calibrated": {
+            "n": 111,
+            "accuracy": 0.8018018018018018,
+            "nll": 0.6219880736666921,
+            "brier_sum_over_classes": 0.2959359700206347,
+            "ece": 0.08715552344513339,
+            "wrong_high_confidence_fraction": 0.04504504504504504,
+            "error_given_high_confidence": 0.08064516129032258,
+            "correct_low_confidence_fraction": 0.05405405405405406
+          },
+          "serial_latency": {
+            "mean_s": 1.6299782726527736,
+            "p50_s": 1.2216089870780706,
+            "p95_s": 3.945251340046525,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 10,
+            "mean": 0.14742459496388102
+          }
+        }
+      }
+    },
+    "fusion": {
+      "temperature": 1.119724094661529,
+      "splits": {
+        "calibration_check": {
+          "raw": {
+            "n": 400,
+            "accuracy": 0.965,
+            "nll": 0.0618638431747509,
+            "brier_sum_over_classes": 0.03280904010922768,
+            "ece": 0.020535418857028184,
+            "wrong_high_confidence_fraction": 0.0025,
+            "error_given_high_confidence": 0.002631578947368421,
+            "correct_low_confidence_fraction": 0.01
+          },
+          "calibrated": {
+            "n": 400,
+            "accuracy": 0.965,
+            "nll": 0.059094837772032685,
+            "brier_sum_over_classes": 0.032338752691083494,
+            "ece": 0.01966948066140082,
+            "wrong_high_confidence_fraction": 0.0025,
+            "error_given_high_confidence": 0.002631578947368421,
+            "correct_low_confidence_fraction": 0.01
+          },
+          "serial_latency": {
+            "mean_s": 0.06633893473539501,
+            "p50_s": 0.06588019896298647,
+            "p95_s": 0.06881078146398067,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "final": {
+          "raw": {
+            "n": 600,
+            "accuracy": 0.975,
+            "nll": 0.05236000421569903,
+            "brier_sum_over_classes": 0.030921376512111246,
+            "ece": 0.010665861693710768,
+            "wrong_high_confidence_fraction": 0.0016666666666666668,
+            "error_given_high_confidence": 0.0017889087656529517,
+            "correct_low_confidence_fraction": 0.018333333333333333
+          },
+          "calibrated": {
+            "n": 600,
+            "accuracy": 0.975,
+            "nll": 0.052155346276848695,
+            "brier_sum_over_classes": 0.031241459480352608,
+            "ece": 0.010483281926389696,
+            "wrong_high_confidence_fraction": 0.0016666666666666668,
+            "error_given_high_confidence": 0.0017889087656529517,
+            "correct_low_confidence_fraction": 0.018333333333333333
+          },
+          "serial_latency": {
+            "mean_s": 0.0663106609803314,
+            "p50_s": 0.06572904996573925,
+            "p95_s": 0.0689091244712472,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "adversarial": {
+          "raw": {
+            "n": 200,
+            "accuracy": 0.97,
+            "nll": 0.05542849092122651,
+            "brier_sum_over_classes": 0.03661937093937882,
+            "ece": 0.016841722370613564,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.02
+          },
+          "calibrated": {
+            "n": 200,
+            "accuracy": 0.97,
+            "nll": 0.05531256732217099,
+            "brier_sum_over_classes": 0.03659059389269832,
+            "ece": 0.01700633736093408,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.02
+          },
+          "serial_latency": {
+            "mean_s": 0.06628062364645303,
+            "p50_s": 0.06615088414400816,
+            "p95_s": 0.0688460124656558,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "production_sim": {
+          "raw": {
+            "n": 200,
+            "accuracy": 0.98,
+            "nll": 0.03566553004119382,
+            "brier_sum_over_classes": 0.025109649704937866,
+            "ece": 0.011469029646949926,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.015
+          },
+          "calibrated": {
+            "n": 200,
+            "accuracy": 0.98,
+            "nll": 0.035754485171098874,
+            "brier_sum_over_classes": 0.025093121017415496,
+            "ece": 0.004938963362091293,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.015
+          },
+          "serial_latency": {
+            "mean_s": 0.06692894120700657,
+            "p50_s": 0.06585759529843926,
+            "p95_s": 0.06993614509701729,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "public": {
+          "raw": {
+            "n": 231,
+            "accuracy": 0.9090909090909091,
+            "nll": 0.47949766763664464,
+            "brier_sum_over_classes": 0.16524284855588398,
+            "ece": 0.05774594810956307,
+            "wrong_high_confidence_fraction": 0.047619047619047616,
+            "error_given_high_confidence": 0.057291666666666664,
+            "correct_low_confidence_fraction": 0.025974025974025976
+          },
+          "calibrated": {
+            "n": 231,
+            "accuracy": 0.9090909090909091,
+            "nll": 0.44337257146755416,
+            "brier_sum_over_classes": 0.16547319316378814,
+            "ece": 0.06340946920056778,
+            "wrong_high_confidence_fraction": 0.047619047619047616,
+            "error_given_high_confidence": 0.05759162303664921,
+            "correct_low_confidence_fraction": 0.025974025974025976
+          },
+          "serial_latency": {
+            "mean_s": 0.10576208632487755,
+            "p50_s": 0.06705625355243683,
+            "p95_s": 0.2750440984964371,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 10,
+            "mean": 0.2065818465213029
+          }
+        },
+        "final_no_normalized_train_match": {
+          "raw": {
+            "n": 403,
+            "accuracy": 0.9627791563275434,
+            "nll": 0.07608963628041172,
+            "brier_sum_over_classes": 0.04528647181484405,
+            "ece": 0.014469723306753234,
+            "wrong_high_confidence_fraction": 0.0024813895781637717,
+            "error_given_high_confidence": 0.0027397260273972603,
+            "correct_low_confidence_fraction": 0.02729528535980149
+          },
+          "calibrated": {
+            "n": 403,
+            "accuracy": 0.9627791563275434,
+            "nll": 0.07554593789930908,
+            "brier_sum_over_classes": 0.04560316622044668,
+            "ece": 0.013815437397778598,
+            "wrong_high_confidence_fraction": 0.0024813895781637717,
+            "error_given_high_confidence": 0.0027397260273972603,
+            "correct_low_confidence_fraction": 0.02729528535980149
+          },
+          "serial_latency": {
+            "mean_s": 0.06644978819105303,
+            "p50_s": 0.06585148070007563,
+            "p95_s": 0.06817960646003485,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          }
+        },
+        "public_easy": {
+          "raw": {
+            "n": 48,
+            "accuracy": 1.0,
+            "nll": 3.3447089085393325e-07,
+            "brier_sum_over_classes": 4.471797662016005e-12,
+            "ece": 3.3446974667672436e-07,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0
+          },
+          "calibrated": {
+            "n": 48,
+            "accuracy": 1.0,
+            "nll": 1.401567961003402e-06,
+            "brier_sum_over_classes": 5.416946848191104e-11,
+            "ece": 1.4015538584155607e-06,
+            "wrong_high_confidence_fraction": 0.0,
+            "error_given_high_confidence": 0.0,
+            "correct_low_confidence_fraction": 0.0
+          },
+          "serial_latency": {
+            "mean_s": 0.06596999906469136,
+            "p50_s": 0.06592757115140557,
+            "p95_s": 0.06832195818424225,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 0,
+            "mean": null
+          }
+        },
+        "public_original": {
+          "raw": {
+            "n": 72,
+            "accuracy": 0.9861111111111112,
+            "nll": 0.09044915633998996,
+            "brier_sum_over_classes": 0.036964547174306285,
+            "ece": 0.03133294864041997,
+            "wrong_high_confidence_fraction": 0.013888888888888888,
+            "error_given_high_confidence": 0.014705882352941176,
+            "correct_low_confidence_fraction": 0.013888888888888888
+          },
+          "calibrated": {
+            "n": 72,
+            "accuracy": 0.9861111111111112,
+            "nll": 0.08621533328147443,
+            "brier_sum_over_classes": 0.03843920120414761,
+            "ece": 0.032760667526020554,
+            "wrong_high_confidence_fraction": 0.013888888888888888,
+            "error_given_high_confidence": 0.014705882352941176,
+            "correct_low_confidence_fraction": 0.013888888888888888
+          },
+          "serial_latency": {
+            "mean_s": 0.06552343825913137,
+            "p50_s": 0.0652238242328167,
+            "p95_s": 0.06719457544386387,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 0,
+            "mean": null
+          }
+        },
+        "public_hard": {
+          "raw": {
+            "n": 111,
+            "accuracy": 0.8198198198198198,
+            "nll": 0.9392036568737197,
+            "brier_sum_over_classes": 0.3199067623391394,
+            "ece": 0.10893269209246684,
+            "wrong_high_confidence_fraction": 0.09009009009009009,
+            "error_given_high_confidence": 0.13157894736842105,
+            "correct_low_confidence_fraction": 0.04504504504504504
+          },
+          "calibrated": {
+            "n": 111,
+            "accuracy": 0.8198198198198198,
+            "nll": 0.8667702048421329,
+            "brier_sum_over_classes": 0.3194295957796062,
+            "ece": 0.12038557516602724,
+            "wrong_high_confidence_fraction": 0.09009009009009009,
+            "error_given_high_confidence": 0.13333333333333333,
+            "correct_low_confidence_fraction": 0.04504504504504504
+          },
+          "serial_latency": {
+            "mean_s": 0.1490702201016583,
+            "p50_s": 0.10452549252659082,
+            "p95_s": 0.34919835068285465,
+            "scope": "serial observed service/model time; excludes download, model startup, GPU swap and queueing at concurrency"
+          },
+          "soft_gold_probability_mae": {
+            "n": 10,
+            "mean": 0.2065818465213029
+          }
+        }
+      }
+    }
+  },
+  "paired": {
+    "final": {
+      "ar -> diffusion": {
+        "n": 600,
+        "gain": 0.01,
+        "damage": 0.22166666666666668,
+        "net_accuracy_change": -0.21166666666666667,
+        "repair_given_wrong": 0.4,
+        "break_given_right": 0.22735042735042735,
+        "error_phi": 0.13688229525932408,
+        "oracle_union_accuracy": 0.985,
+        "repaired": 6,
+        "broken": 133,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.31666666666666665,
+          "upper": -0.125,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar -> ar_view": {
+        "n": 600,
+        "gain": 0.011666666666666667,
+        "damage": 0.008333333333333333,
+        "net_accuracy_change": 0.0033333333333333335,
+        "repair_given_wrong": 0.4666666666666667,
+        "break_given_right": 0.008547008547008548,
+        "error_phi": 0.5627497946372945,
+        "oracle_union_accuracy": 0.9866666666666667,
+        "repaired": 7,
+        "broken": 5,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.013333333333333334,
+          "upper": 0.025,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar -> diffusion_guided_ar": {
+        "n": 600,
+        "gain": 0.011666666666666667,
+        "damage": 0.006666666666666667,
+        "net_accuracy_change": 0.005,
+        "repair_given_wrong": 0.4666666666666667,
+        "break_given_right": 0.006837606837606838,
+        "error_phi": 0.5871365639519759,
+        "oracle_union_accuracy": 0.9866666666666667,
+        "repaired": 7,
+        "broken": 4,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.011666666666666667,
+          "upper": 0.02666666666666667,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar_view -> diffusion_guided_ar": {
+        "n": 600,
+        "gain": 0.006666666666666667,
+        "damage": 0.005,
+        "net_accuracy_change": 0.0016666666666666668,
+        "repair_given_wrong": 0.3076923076923077,
+        "break_given_right": 0.005110732538330494,
+        "error_phi": 0.7146488022636592,
+        "oracle_union_accuracy": 0.985,
+        "repaired": 4,
+        "broken": 3,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.01,
+          "upper": 0.011666666666666667,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar_guided_ar -> diffusion_guided_ar": {
+        "n": 600,
+        "gain": 0.0033333333333333335,
+        "damage": 0.005,
+        "net_accuracy_change": -0.0016666666666666668,
+        "repair_given_wrong": 0.18181818181818182,
+        "break_given_right": 0.0050933786078098476,
+        "error_phi": 0.7791345986048628,
+        "oracle_union_accuracy": 0.985,
+        "repaired": 2,
+        "broken": 3,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.011666666666666667,
+          "upper": 0.006666666666666667,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "diffusion -> diffusion_guided_ar": {
+        "n": 600,
+        "gain": 0.22333333333333333,
+        "damage": 0.006666666666666667,
+        "net_accuracy_change": 0.21666666666666667,
+        "repair_given_wrong": 0.9436619718309859,
+        "break_given_right": 0.008733624454148471,
+        "error_phi": 0.14452559125618825,
+        "oracle_union_accuracy": 0.9866666666666667,
+        "repaired": 134,
+        "broken": 4,
+        "descriptive_family_cluster_interval": {
+          "lower": 0.12666666666666668,
+          "upper": 0.32,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar -> fusion": {
+        "n": 600,
+        "gain": 0.0,
+        "damage": 0.0,
+        "net_accuracy_change": 0.0,
+        "repair_given_wrong": 0.0,
+        "break_given_right": 0.0,
+        "error_phi": 1.0,
+        "oracle_union_accuracy": 0.975,
+        "repaired": 0,
+        "broken": 0,
+        "descriptive_family_cluster_interval": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      }
+    },
+    "adversarial": {
+      "ar -> diffusion": {
+        "n": 200,
+        "gain": 0.01,
+        "damage": 0.215,
+        "net_accuracy_change": -0.205,
+        "repair_given_wrong": 0.3333333333333333,
+        "break_given_right": 0.22164948453608246,
+        "error_phi": 0.1790435272983957,
+        "oracle_union_accuracy": 0.98,
+        "repaired": 2,
+        "broken": 43,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.305,
+          "upper": -0.12,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar -> ar_view": {
+        "n": 200,
+        "gain": 0.01,
+        "damage": 0.01,
+        "net_accuracy_change": 0.0,
+        "repair_given_wrong": 0.3333333333333333,
+        "break_given_right": 0.010309278350515464,
+        "error_phi": 0.6563573883161518,
+        "oracle_union_accuracy": 0.98,
+        "repaired": 2,
+        "broken": 2,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.02,
+          "upper": 0.02,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar -> diffusion_guided_ar": {
+        "n": 200,
+        "gain": 0.01,
+        "damage": 0.015,
+        "net_accuracy_change": -0.005,
+        "repair_given_wrong": 0.3333333333333333,
+        "break_given_right": 0.015463917525773196,
+        "error_phi": 0.6044564844841511,
+        "oracle_union_accuracy": 0.98,
+        "repaired": 2,
+        "broken": 3,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.03,
+          "upper": 0.015,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar_view -> diffusion_guided_ar": {
+        "n": 200,
+        "gain": 0.005,
+        "damage": 0.01,
+        "net_accuracy_change": -0.005,
+        "repair_given_wrong": 0.16666666666666666,
+        "break_given_right": 0.010309278350515464,
+        "error_phi": 0.7639436835564888,
+        "oracle_union_accuracy": 0.975,
+        "repaired": 1,
+        "broken": 2,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.015,
+          "upper": 0.0,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar_guided_ar -> diffusion_guided_ar": {
+        "n": 200,
+        "gain": 0.0,
+        "damage": 0.01,
+        "net_accuracy_change": -0.01,
+        "repair_given_wrong": 0.0,
+        "break_given_right": 0.010256410256410256,
+        "error_phi": 0.8408089598474263,
+        "oracle_union_accuracy": 0.975,
+        "repaired": 0,
+        "broken": 2,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.025,
+          "upper": 0.0,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "diffusion -> diffusion_guided_ar": {
+        "n": 200,
+        "gain": 0.21,
+        "damage": 0.01,
+        "net_accuracy_change": 0.2,
+        "repair_given_wrong": 0.8936170212765957,
+        "break_given_right": 0.013071895424836602,
+        "error_phi": 0.2152782732468676,
+        "oracle_union_accuracy": 0.975,
+        "repaired": 42,
+        "broken": 2,
+        "descriptive_family_cluster_interval": {
+          "lower": 0.115,
+          "upper": 0.3,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar -> fusion": {
+        "n": 200,
+        "gain": 0.0,
+        "damage": 0.0,
+        "net_accuracy_change": 0.0,
+        "repair_given_wrong": 0.0,
+        "break_given_right": 0.0,
+        "error_phi": 1.0,
+        "oracle_union_accuracy": 0.97,
+        "repaired": 0,
+        "broken": 0,
+        "descriptive_family_cluster_interval": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      }
+    },
+    "production_sim": {
+      "ar -> diffusion": {
+        "n": 200,
+        "gain": 0.005,
+        "damage": 0.25,
+        "net_accuracy_change": -0.245,
+        "repair_given_wrong": 0.25,
+        "break_given_right": 0.25510204081632654,
+        "error_phi": 0.15699184451971512,
+        "oracle_union_accuracy": 0.985,
+        "repaired": 1,
+        "broken": 50,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.36,
+          "upper": -0.14,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar -> ar_view": {
+        "n": 200,
+        "gain": 0.0,
+        "damage": 0.0,
+        "net_accuracy_change": 0.0,
+        "repair_given_wrong": 0.0,
+        "break_given_right": 0.0,
+        "error_phi": 1.0,
+        "oracle_union_accuracy": 0.98,
+        "repaired": 0,
+        "broken": 0,
+        "descriptive_family_cluster_interval": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar -> diffusion_guided_ar": {
+        "n": 200,
+        "gain": 0.0,
+        "damage": 0.005,
+        "net_accuracy_change": -0.005,
+        "repair_given_wrong": 0.0,
+        "break_given_right": 0.00510204081632653,
+        "error_phi": 0.8921425711997747,
+        "oracle_union_accuracy": 0.98,
+        "repaired": 0,
+        "broken": 1,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.015,
+          "upper": 0.0,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar_view -> diffusion_guided_ar": {
+        "n": 200,
+        "gain": 0.0,
+        "damage": 0.005,
+        "net_accuracy_change": -0.005,
+        "repair_given_wrong": 0.0,
+        "break_given_right": 0.00510204081632653,
+        "error_phi": 0.8921425711997747,
+        "oracle_union_accuracy": 0.98,
+        "repaired": 0,
+        "broken": 1,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.015,
+          "upper": 0.0,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar_guided_ar -> diffusion_guided_ar": {
+        "n": 200,
+        "gain": 0.01,
+        "damage": 0.0,
+        "net_accuracy_change": 0.01,
+        "repair_given_wrong": 0.2857142857142857,
+        "break_given_right": 0.0,
+        "error_phi": 0.8408089598474214,
+        "oracle_union_accuracy": 0.975,
+        "repaired": 2,
+        "broken": 0,
+        "descriptive_family_cluster_interval": {
+          "lower": 0.0,
+          "upper": 0.025,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "diffusion -> diffusion_guided_ar": {
+        "n": 200,
+        "gain": 0.25,
+        "damage": 0.01,
+        "net_accuracy_change": 0.24,
+        "repair_given_wrong": 0.9433962264150944,
+        "break_given_right": 0.013605442176870748,
+        "error_phi": 0.12154746259496176,
+        "oracle_union_accuracy": 0.985,
+        "repaired": 50,
+        "broken": 2,
+        "descriptive_family_cluster_interval": {
+          "lower": 0.135,
+          "upper": 0.355,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar -> fusion": {
+        "n": 200,
+        "gain": 0.0,
+        "damage": 0.0,
+        "net_accuracy_change": 0.0,
+        "repair_given_wrong": 0.0,
+        "break_given_right": 0.0,
+        "error_phi": 1.0,
+        "oracle_union_accuracy": 0.98,
+        "repaired": 0,
+        "broken": 0,
+        "descriptive_family_cluster_interval": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "families": 20,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      }
+    },
+    "public": {
+      "ar -> diffusion": {
+        "n": 231,
+        "gain": 0.025974025974025976,
+        "damage": 0.09956709956709957,
+        "net_accuracy_change": -0.0735930735930736,
+        "repair_given_wrong": 0.2857142857142857,
+        "break_given_right": 0.10952380952380952,
+        "error_phi": 0.4689572648763831,
+        "oracle_union_accuracy": 0.935064935064935,
+        "repaired": 6,
+        "broken": 23,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.12682926829268293,
+          "upper": -0.027649769585253458,
+          "families": 18,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar -> ar_view": {
+        "n": 231,
+        "gain": 0.008658008658008658,
+        "damage": 0.030303030303030304,
+        "net_accuracy_change": -0.021645021645021644,
+        "repair_given_wrong": 0.09523809523809523,
+        "break_given_right": 0.03333333333333333,
+        "error_phi": 0.7926609897383042,
+        "oracle_union_accuracy": 0.9177489177489178,
+        "repaired": 2,
+        "broken": 7,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.04247104247104247,
+          "upper": 0.0,
+          "families": 18,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar -> diffusion_guided_ar": {
+        "n": 231,
+        "gain": 0.012987012987012988,
+        "damage": 0.025974025974025976,
+        "net_accuracy_change": -0.012987012987012988,
+        "repair_given_wrong": 0.14285714285714285,
+        "break_given_right": 0.02857142857142857,
+        "error_phi": 0.7806537579843404,
+        "oracle_union_accuracy": 0.922077922077922,
+        "repaired": 3,
+        "broken": 6,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.029411764705882353,
+          "upper": 0.004694835680751174,
+          "families": 18,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar_view -> diffusion_guided_ar": {
+        "n": 231,
+        "gain": 0.021645021645021644,
+        "damage": 0.012987012987012988,
+        "net_accuracy_change": 0.008658008658008658,
+        "repair_given_wrong": 0.19230769230769232,
+        "break_given_right": 0.014634146341463415,
+        "error_phi": 0.8214437880624927,
+        "oracle_union_accuracy": 0.9090909090909091,
+        "repaired": 5,
+        "broken": 3,
+        "descriptive_family_cluster_interval": {
+          "lower": -0.013452914798206279,
+          "upper": 0.03225806451612903,
+          "families": 18,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar_guided_ar -> diffusion_guided_ar": {
+        "n": 231,
+        "gain": 0.008658008658008658,
+        "damage": 0.0,
+        "net_accuracy_change": 0.008658008658008658,
+        "repair_given_wrong": 0.07692307692307693,
+        "break_given_right": 0.0,
+        "error_phi": 0.9561162614779903,
+        "oracle_union_accuracy": 0.8961038961038961,
+        "repaired": 2,
+        "broken": 0,
+        "descriptive_family_cluster_interval": {
+          "lower": 0.0,
+          "upper": 0.020833333333333332,
+          "families": 18,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "diffusion -> diffusion_guided_ar": {
+        "n": 231,
+        "gain": 0.09523809523809523,
+        "damage": 0.03463203463203463,
+        "net_accuracy_change": 0.06060606060606061,
+        "repair_given_wrong": 0.5789473684210527,
+        "break_given_right": 0.04145077720207254,
+        "error_phi": 0.46121984398085736,
+        "oracle_union_accuracy": 0.9307359307359307,
+        "repaired": 22,
+        "broken": 8,
+        "descriptive_family_cluster_interval": {
+          "lower": 0.017167381974248927,
+          "upper": 0.1095890410958904,
+          "families": 18,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      },
+      "ar -> fusion": {
+        "n": 231,
+        "gain": 0.0,
+        "damage": 0.0,
+        "net_accuracy_change": 0.0,
+        "repair_given_wrong": 0.0,
+        "break_given_right": 0.0,
+        "error_phi": 1.0,
+        "oracle_union_accuracy": 0.9090909090909091,
+        "repaired": 0,
+        "broken": 0,
+        "descriptive_family_cluster_interval": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "families": 18,
+          "resamples": 2000,
+          "seed": 23,
+          "warning": "Not a guarantee for unseen domains; small, shared generator families."
+        }
+      }
+    }
+  }
+}

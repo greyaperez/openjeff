@@ -1,0 +1,84 @@
+{
+  "scope": "post-hoc literal normalized-state overlap diagnostic; not semantic novelty or a new benchmark",
+  "normalization": "Drop state.case_ref; replace that case tag everywhere in serialized state with <CASE>; preserve family, all other values and array order. Ignore question wording and candidate order.",
+  "limitations": "Finite boolean/rule families repeat naturally. Entity renaming and shared generators mean this check is not a proof of novelty. Adversarial messages make that split different under this literal comparison.",
+  "training_rows": 8000,
+  "training_unique_normalized_states": 5794,
+  "splits": {
+    "development": {
+      "rows": 400,
+      "unique_normalized_states": 361,
+      "rows_matching_train": 131
+    },
+    "calibration_fit": {
+      "rows": 600,
+      "unique_normalized_states": 528,
+      "rows_matching_train": 191
+    },
+    "calibration_check": {
+      "rows": 400,
+      "unique_normalized_states": 358,
+      "rows_matching_train": 132
+    },
+    "final": {
+      "rows": 600,
+      "unique_normalized_states": 523,
+      "rows_matching_train": 197
+    },
+    "adversarial": {
+      "rows": 200,
+      "unique_normalized_states": 187,
+      "rows_matching_train": 0
+    },
+    "production_sim": {
+      "rows": 200,
+      "unique_normalized_states": 188,
+      "rows_matching_train": 63
+    }
+  },
+  "rows_matching_calibration_fit": {
+    "calibration_check": 85,
+    "final": 127,
+    "adversarial": 0,
+    "production_sim": 42
+  },
+  "final_breakdown": {
+    "base": {
+      "matches_training_state": {
+        "rows": 197,
+        "correct": 172,
+        "accuracy": 0.8730964467005076
+      },
+      "does_not_match_training_state": {
+        "rows": 403,
+        "correct": 306,
+        "accuracy": 0.7593052109181141
+      }
+    },
+    "adapter": {
+      "matches_training_state": {
+        "rows": 197,
+        "correct": 197,
+        "accuracy": 1.0
+      },
+      "does_not_match_training_state": {
+        "rows": 403,
+        "correct": 388,
+        "accuracy": 0.9627791563275434
+      }
+    }
+  },
+  "final_train_matches_by_family": {
+    "policy_precedence": 30,
+    "rubric": 30,
+    "boolean_rule": 30,
+    "injection_override": 20,
+    "verified_consent": 30,
+    "schema_validation": 10,
+    "access_matrix": 19,
+    "entity_resolution": 22,
+    "entailment": 4,
+    "deadline": 1,
+    "ranking": 1
+  }
+}

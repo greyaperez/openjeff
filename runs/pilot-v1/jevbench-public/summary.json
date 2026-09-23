@@ -1,0 +1,133 @@
+{
+  "scope": "231 public items only; not the 534-item private/public ranked benchmark",
+  "benchmark_revision": "f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84",
+  "checkpoint_frozen_before_run": {
+    "adapter_sha256": "a1811874542eb3b9ca4235d79826dfabb847f0c5ad076bfd25b5e4b2f426ba2b",
+    "best_step": 500,
+    "release_choice": "adapter",
+    "rule": "development accuracy then NLL against base",
+    "final_unopened": true,
+    "frozen_utc": "2026-09-23T04:34:38Z"
+  },
+  "max_tokens": 8192,
+  "calibration_note": "Temperature frozen on synthetic calibration_fit, transferred without refitting. Context guard raised from 1536 to 8192 for this diagnostic; no truncation.",
+  "models": {
+    "base": {
+      "easy": {
+        "attempts": 48,
+        "scorable": 48,
+        "accuracy": 1.0,
+        "invalid": 0,
+        "ece_10_bins_valid_labeled": 0.027061596839663138,
+        "gold_probability_mae": null,
+        "gold_distribution_items": 0,
+        "latency": {
+          "n": 48,
+          "p50_s": 0.059195482172071934,
+          "p95_s": 0.06914078718982636
+        }
+      },
+      "original": {
+        "attempts": 72,
+        "scorable": 72,
+        "accuracy": 0.9305555555555556,
+        "invalid": 0,
+        "ece_10_bins_valid_labeled": 0.033342378370919176,
+        "gold_probability_mae": null,
+        "gold_distribution_items": 0,
+        "latency": {
+          "n": 72,
+          "p50_s": 0.05828352831304073,
+          "p95_s": 0.0630463701672852
+        }
+      },
+      "hard": {
+        "attempts": 111,
+        "scorable": 111,
+        "accuracy": 0.42342342342342343,
+        "invalid": 0,
+        "ece_10_bins_valid_labeled": 0.27561450966010925,
+        "gold_probability_mae": 0.28368103190220545,
+        "gold_distribution_items": 10,
+        "latency": {
+          "n": 111,
+          "p50_s": 0.12217650655657053,
+          "p95_s": 0.6071529979817569
+        }
+      },
+      "all": {
+        "attempts": 231,
+        "scorable": 231,
+        "accuracy": 0.7012987012987013,
+        "invalid": 0,
+        "ece_10_bins_valid_labeled": 0.13537774199903427,
+        "gold_probability_mae": 0.28368103190220545,
+        "gold_distribution_items": 10,
+        "latency": {
+          "n": 231,
+          "p50_s": 0.06330391764640808,
+          "p95_s": 0.4978139470331371
+        }
+      }
+    },
+    "adapter": {
+      "easy": {
+        "attempts": 48,
+        "scorable": 48,
+        "accuracy": 1.0,
+        "invalid": 0,
+        "ece_10_bins_valid_labeled": 3.611869066055817e-07,
+        "gold_probability_mae": null,
+        "gold_distribution_items": 0,
+        "latency": {
+          "n": 48,
+          "p50_s": 0.06800467241555452,
+          "p95_s": 0.07101897052489221
+        }
+      },
+      "original": {
+        "attempts": 72,
+        "scorable": 72,
+        "accuracy": 0.9861111111111112,
+        "invalid": 0,
+        "ece_10_bins_valid_labeled": 0.027165996854577646,
+        "gold_probability_mae": null,
+        "gold_distribution_items": 0,
+        "latency": {
+          "n": 72,
+          "p50_s": 0.06719143316149712,
+          "p95_s": 0.07267143339850009
+        }
+      },
+      "hard": {
+        "attempts": 111,
+        "scorable": 111,
+        "accuracy": 0.8018018018018018,
+        "invalid": 0,
+        "ece_10_bins_valid_labeled": 0.1417171449504269,
+        "gold_probability_mae": 0.23020955837166063,
+        "gold_distribution_items": 10,
+        "latency": {
+          "n": 111,
+          "p50_s": 0.13803522940725088,
+          "p95_s": 0.6738897506147623
+        }
+      },
+      "all": {
+        "attempts": 231,
+        "scorable": 231,
+        "accuracy": 0.9004329004329005,
+        "invalid": 0,
+        "ece_10_bins_valid_labeled": 0.06924808912318903,
+        "gold_probability_mae": 0.23020955837166063,
+        "gold_distribution_items": 10,
+        "latency": {
+          "n": 231,
+          "p50_s": 0.07233654893934727,
+          "p95_s": 0.5532523016445339
+        }
+      }
+    }
+  },
+  "wall_seconds": 70.64355564769357
+}

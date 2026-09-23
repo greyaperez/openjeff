@@ -1,0 +1,8 @@
+{
+  "adapter_sha256": "a1811874542eb3b9ca4235d79826dfabb847f0c5ad076bfd25b5e4b2f426ba2b",
+  "best_step": 500,
+  "release_choice": "adapter",
+  "rule": "development accuracy then NLL against base",
+  "final_unopened": true,
+  "frozen_utc": "2026-09-23T04:34:38Z"
+}

@@ -1,0 +1,50 @@
+{
+  "project": "OpenJeff",
+  "status": "training_calibration_public_evaluation_completed",
+  "baseline": {
+    "model_id": "google/gemma-4-12B-it",
+    "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+    "readout": "single_token_candidate_codes",
+    "thinking": false,
+    "precision": "bfloat16",
+    "max_input_tokens": 1536
+  },
+  "lora_starting_point": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ],
+    "learning_rate": 0.0001,
+    "max_epochs": 1,
+    "microbatch": 4,
+    "gradient_accumulation": 4,
+    "max_training_tokens_per_example": 1536,
+    "loss": "candidate_cross_entropy_at_answer_position",
+    "dataset_initial_rows": 8000,
+    "dataset_max_rows": 12000,
+    "pilot_steps_before_cost_projection": 100,
+    "optimizer_steps": 500
+  },
+  "calibration": {
+    "method": "positive_temperature",
+    "fit_split": "calibration_fit",
+    "check_split": "calibration_check"
+  },
+  "hybrid_enabled": false,
+  "budget": {
+    "hard_cap_usd": 200,
+    "planned_stop_usd": 150,
+    "reserve_usd": 50,
+    "compatibility_probe_max_usd": 10
+  },
+  "spending_to_date_usd": null,
+  "provider_billing_integration": false,
+  "cash_paid_to_date_usd": 10,
+  "spending_note": "10 USD prepaid cash purchase; current resource and credit consumption evidence in reports/spending.json.",
+  "public_benchmark_max_input_tokens": 8192
+}

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openjeff"
+version = "0.1.0"
+description = "Experimental calibrated, self-hosted typed decisions"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+dependencies = []
+
+[project.scripts]
+openjeff = "openjeff.__main__:main"
+openjeff-serve = "openjeff.serve:main"
+
+[tool.setuptools.packages.find]
+include = ["openjeff*"]
+

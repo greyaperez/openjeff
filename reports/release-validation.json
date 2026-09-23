@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "heldout_score_rows_verified": 2800,
+  "temperature_fits_recomputed": 2,
+  "adapter_hash": "a1811874542eb3b9ca4235d79826dfabb847f0c5ad076bfd25b5e4b2f426ba2b",
+  "training_steps": 500,
+  "training_examples_seen": 8000,
+  "selected_backend": "adapter",
+  "checks": [
+    "dataset hashes",
+    "adapter hashes",
+    "score/source alignment",
+    "calibration separation",
+    "metrics recomputation",
+    "development-only checkpoint selection",
+    "saved weights and HTTP parity"
+  ]
+}

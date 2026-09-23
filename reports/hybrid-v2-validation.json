@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "validated_score_rows": 15786,
+  "methods": [
+    "ar",
+    "ar_view",
+    "diffusion",
+    "diffusion_guided_ar",
+    "ar_guided_ar",
+    "fusion"
+  ],
+  "splits": [
+    "development",
+    "calibration_fit",
+    "calibration_check",
+    "final",
+    "adversarial",
+    "production_sim",
+    "public"
+  ],
+  "calibration_fits_recomputed": 6,
+  "fusion_selection_recomputed_from_development_only": true,
+  "guidance_reconstructed_from_recorded_outputs": true,
+  "original_adapter_sha256": "a1811874542eb3b9ca4235d79826dfabb847f0c5ad076bfd25b5e4b2f426ba2b",
+  "scope": "Saved-score validation; does not rerun GPU inference or establish benchmark contamination absence.",
+  "calibration_checks": {
+    "ar": {
+      "saved_temperature": 1.1197247771148635,
+      "recomputed_temperature": 1.119724094661529,
+      "fit_nll_absolute_difference": 3.469446951953614e-17,
+      "maximum_probability_difference_all_splits": 2.752905163827535e-07
+    },
+    "ar_view": {
+      "saved_temperature": 2.030288984185829,
+      "recomputed_temperature": 2.030288984185829,
+      "fit_nll_absolute_difference": 0.0,
+      "maximum_probability_difference_all_splits": 0.0
+    },
+    "diffusion": {
+      "saved_temperature": 1.6213176595786478,
+      "recomputed_temperature": 1.6213176595786478,
+      "fit_nll_absolute_difference": 0.0,
+      "maximum_probability_difference_all_splits": 0.0
+    },
+    "diffusion_guided_ar": {
+      "saved_temperature": 2.017606770506028,
+      "recomputed_temperature": 2.017606770506028,
+      "fit_nll_absolute_difference": 0.0,
+      "maximum_probability_difference_all_splits": 0.0
+    },
+    "ar_guided_ar": {
+      "saved_temperature": 2.002682068628046,
+      "recomputed_temperature": 2.002682068628046,
+      "fit_nll_absolute_difference": 0.0,
+      "maximum_probability_difference_all_splits": 0.0
+    },
+    "fusion": {
+      "saved_temperature": 1.119724094661529,
+      "recomputed_temperature": 1.119724094661529,
+      "fit_nll_absolute_difference": 0.0,
+      "maximum_probability_difference_all_splits": 0.0
+    }
+  },
+  "calibration_tolerances": {
+    "temperature_relative": 1e-06,
+    "temperature_absolute": 1e-08,
+    "fit_nll_absolute": 1e-12,
+    "maximum_probability_absolute": 5e-07
+  }
+}

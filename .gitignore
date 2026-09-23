@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+artifacts/
+*.egg-info/
+.pytest_cache/
+.env
+checkpoints/
+weights/
+data/private/
+data/final-sealed/
+
+# Local operator state and cloud backups
+publication/
+reports/hybrid-v2-cloud/
+reports/*package*.json
+reports/hybrid-export-validation.json
+reports/hybrid-bundle-v2.json
+reports/shutdown-diagnostic-v2.json
+*.tar.gz
+*.tgz
+*.log
+.DS_Store

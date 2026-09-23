@@ -1,0 +1,5 @@
+# Verified atop runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404 (torch 2.8.0+cu128).
+-r probe-gpu-requirements.txt
+peft==0.21.0
+accelerate==1.15.0
+psutil==7.2.2

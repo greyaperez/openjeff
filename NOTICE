@@ -1,0 +1,18 @@
+OpenJeff
+Copyright 2026 OpenJeff contributors
+
+Original OpenJeff code is licensed under Apache License 2.0.
+
+research/snapshots contains separately attributed, unmodified research reference
+material. JevBench material retains its MIT license and third-party notices;
+djev reference material retains its Apache-2.0 license and NOTICE. Model cards,
+configuration metadata and foundation weights retain their upstream terms.
+research/vendor/djev contains the pinned Apache-2.0 Djev implementation with its
+LICENSE and NOTICE. OpenJeff LoRA weights and original synthetic adaptation data
+are provided under Apache-2.0; the Gemma base retains its upstream license.
+The source manifest records exact URLs and SHA-256 hashes. No foundation model
+weights are included in this repository.
+
+OpenJeff is independent of TypeSafe AI, Google, NVIDIA, Ai2, and the owners of
+22 Jump Street. References identify sources and inspiration, not endorsement.
+

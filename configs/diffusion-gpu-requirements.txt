@@ -1,0 +1,20 @@
+# Exact official per-commit binary; checked against Djev runtime/sources.json.
+vllm @ https://wheels.vllm.ai/dee37d89115db4c94a820a79a78a7828e141c910/vllm-0.29.1rc1.dev347%2Bgdee37d891-cp38-abi3-manylinux_2_28_x86_64.whl
+torch==2.13.0+cu130
+transformers==5.17.0
+Pillow==12.3.0
+# Match the host's CUDA 13.0 driver ceiling, rather than latest compiler wheels.
+nvidia-cuda-nvcc==13.0.88
+nvidia-cuda-crt==13.0.88
+nvidia-nvvm==13.0.88
+nvidia-nvjitlink==13.0.88
+nvidia-cuda-cccl==13.0.85
+# Djev API and CPU-test versions from its pinned pyproject.toml.
+fastapi==0.136.3
+httpx==0.28.1
+pydantic==2.13.5
+uvicorn[standard]==0.53.0
+sentencepiece>=0.2,<1
+jinja2>=3.1,<4
+pytest>=8,<10
+pytest-asyncio>=0.24,<2

@@ -1,0 +1,15 @@
+{
+  "model": "google/diffusiongemma-26B-A4B-it",
+  "revision": "f7f5b7f5fa82ffc52addd066915886d497f5517b",
+  "gpu": "NVIDIA H200",
+  "torch": "2.13.0+cu130",
+  "vllm": "0.29.1rc1.dev347+gdee37d891",
+  "transformers": "5.17.0",
+  "read_steps": 1,
+  "samples": 1,
+  "seed": 0,
+  "canvas_bound": 128,
+  "compact_canvas": true,
+  "guidance_code_sha256": "68a8e41523bfca9c9bdf53232882f5d637b35203b0463b4f99eb53a0902fec26",
+  "runtime_commit": "3ce907e6835212f27ee82b4cee9039198c4abe35"
+}

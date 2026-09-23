@@ -1,0 +1,11 @@
+{
+  "currency": "USD",
+  "project_cash_cap": 200,
+  "total_prepaid_purchases": 60,
+  "approx_credit_consumption": 35.84,
+  "consumption_is_provisional": true,
+  "active_experiment_resources": 0,
+  "verified_final_spend_rate_usd_per_hour": 0,
+  "automatic_topups_enabled": false,
+  "note": "Includes earlier unsuccessful setup attempts, approximately 28 USD from a stalled B200 rental. Prepaid credit purchases and consumption are not additive. Account/payment details and rental identifiers are not published."
+}

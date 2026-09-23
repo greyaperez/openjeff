@@ -1,0 +1,58 @@
+{
+  "base_commit": "dee37d89115db4c94a820a79a78a7828e141c910",
+  "structured_read_commit": "0f4678d44159b42531a9e398ae05df869ec67c5d",
+  "overlays": {
+    "vllm/model_executor/models/diffusion_gemma.py": {
+      "base_sha256": "59b89b6da7d4f1df062bbf26b1041a4e93c9723f0c37604011eab81e4272c236",
+      "overlay_sha256": "17140728a2c84db4698ad640467671d76a1679169f12178a342d16d163c0d46f"
+    },
+    "vllm/sampling_params.py": {
+      "base_sha256": "792e2c6d57eb1ffa32cb18faaf22b3877d84b7d57330a58d95561719b97dc22e",
+      "overlay_sha256": "3fcc875a1c6de57994f124a4e2037f425408e5de6cdc9fc4a617941a03c328e9"
+    },
+    "vllm/v1/core/sched/async_scheduler.py": {
+      "base_sha256": "e586a0ef3c6778be56a93e7f9bb712d4de9de6e7d7fe7e3e1d51dae83ecfc508",
+      "overlay_sha256": "c0442d0c111cd6e7feb00de4b8f640fb48a0ffd73bdb69be155383ecc21e633f"
+    },
+    "vllm/v1/core/sched/scheduler.py": {
+      "base_sha256": "ea45be71111aa81a423b4e77dc82b769cda530f0117a3af3214202d8feda06a4",
+      "overlay_sha256": "e10fa2cba6e39b145c1e409d1d268425137c936ba69524a03433a987a9891db5"
+    },
+    "vllm/v1/core/sched/utils.py": {
+      "base_sha256": "b6583424b6da15000545cd926ec887ee591bae8a56e6734b8ddf8f9e8f90cc4b",
+      "overlay_sha256": "c661fd195c3641a40d985ff7789aa617810a09d288df6ec3df7304d91b07f563"
+    },
+    "vllm/v1/engine/input_processor.py": {
+      "base_sha256": "7fa4016341b8ad99a4cec7218e5ecd4e4a2bbcdd8d3fa7536ea24a6c99805060",
+      "overlay_sha256": "01177aa1dd08315034b39f580d2657fe371fd9c83d15404dca6121631dd3245c"
+    },
+    "vllm/v1/worker/gpu/model_runner.py": {
+      "base_sha256": "670433ce2ea19f271be7a1c83c7481922fe0dae9ecfec0b94183caa06ac4f442",
+      "overlay_sha256": "2d9521e809b7913d6781ec62805890a43f7f3d2737acaee05e3194e5b3ff6b68"
+    },
+    "vllm/v1/worker/gpu/model_states/interface.py": {
+      "base_sha256": "5675b6fedc7403a9ab410b1e5565974e78fac23c42ab4253ae1da52d6e09b594",
+      "overlay_sha256": "66956d85d696efbce26b4b1aa8d9523ec6b6c88d0ace5b635cd9ba70827e5939"
+    },
+    "vllm/v1/worker/gpu/spec_decode/utils.py": {
+      "base_sha256": "282f2929eddae9ca7312269f799be07472334b6df9fd91878b5e839ec05e418c",
+      "overlay_sha256": "878dbd7a81c5ebb807ae9c09b9a4323d0cd7a8ed49e301cb9a6b7dd64c2b4921"
+    }
+  },
+  "collaborators": {
+    "v1/worker/gpu/attn_utils.py": "5f43a2dd07e067d00ba59cc68c3a52dcc191f237a2db8497b7849ec43bd43ae2",
+    "v1/attention/ops/triton_attention_helpers.py": "35aa993d01345f535d2641cf9dcabb8b64c51b20a19707bc5987e616aaa87ddd",
+    "multimodal/inputs.py": "3ce5d3cc5bedf0343d75e1a7cfbca10a0061b960de56a9fb6465cde0f14bc8b9",
+    "model_executor/models/gemma4.py": "b19de1d128f520009673d8bbea60a405b307fad17cef7768092e37f617e4b0d6",
+    "v1/attention/backends/triton_attn.py": "5639817e1fa82e180bd20ab0b0efd444ecc8cbc8837121f9e81576ef50ac5a4d",
+    "v1/attention/ops/triton_unified_attention.py": "65d0fbcf33d00789df8ca688c0a1c908e710cfaef53471178747ecae11f05829",
+    "v1/worker/gpu/mm/encoder_cache.py": "a27a52c2c52686a574b24910d38f7bd81508fa75d9d757f1b8d6e169575aa385",
+    "v1/request.py": "0dba4ae41981724ab253cc79e77ea97f9d0cf9169c5247d8d713c6e87cbc4dea"
+  },
+  "packages": {
+    "torch": "2.13.0+cu130",
+    "vllm": "0.29.1rc1.dev347+gdee37d891",
+    "transformers": "5.17.0",
+    "Pillow": "12.3.0"
+  }
+}

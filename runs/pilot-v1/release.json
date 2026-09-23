@@ -1,0 +1,11 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "revision": "707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7",
+  "selected_backend": "adapter",
+  "evaluation_adapter_sha256": "a1811874542eb3b9ca4235d79826dfabb847f0c5ad076bfd25b5e4b2f426ba2b",
+  "package_adapter_sha256": "a1811874542eb3b9ca4235d79826dfabb847f0c5ad076bfd25b5e4b2f426ba2b",
+  "adapter_weights_sha256": "16069594ba62c231aa98fdbf99fbcadbcf20e8b4e087786e0f817401d56a1a85",
+  "scope": "experimental synthetic structured decisions",
+  "cloud_terminated": true,
+  "cleanup_evidence": "A100 stop succeeded, console showed 0 USD/hour, then pod was terminated. See reports/spending.json."
+}
