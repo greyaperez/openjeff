@@ -148,8 +148,8 @@ cover GPU time for training and reproducible evaluations. The code, adapters,
 and results remain available to everyone. Useful bug reports, independent tests,
 and documentation improvements help just as much.
 
-GitHub Sponsors is being set up; financial contributions are not enabled yet.
-See [how to contribute](CONTRIBUTING.md).
+[Support OpenJeff on GitHub Sponsors](https://github.com/sponsors/greyaperez)
+or see [how to contribute](CONTRIBUTING.md).
 
 This project is independent of TypeSafe, Google, and the film's owners. Source, adapter, data, and evaluation records are published here. No hosted
 inference service is provided.
