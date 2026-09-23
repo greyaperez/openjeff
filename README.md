@@ -4,7 +4,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/branding/openjeff-logo-dark.png">
     <source media="(prefers-color-scheme: light)" srcset="assets/branding/openjeff-logo.png">
-    <img src="assets/branding/openjeff-logo.png" alt="OpenJeff name-badge mascot" width="360">
+    <img src="assets/branding/openjeff-logo.png" alt="OpenJeff name-badge mascot" width="240">
   </picture>
 </p>
 
@@ -14,24 +14,57 @@ A self-hosted, experimental judgment primitive: evidence and a finite set of
 choices go in; probabilities, a proposed decision, and an explicit abstention
 come out. Named, deliberately, for “My name is Jeff.”
 
-**Version 0.1.0 pilot is trained and evaluated.** It pairs Google's Gemma 4 12B IT
-with an original LoRA adapter and a frozen temperature calibrator. Original code,
-adaptation data, and adapter are Apache-2.0; upstream artifacts retain their terms.
-No external inference API is required.
+## Initial benchmarks: OpenJeff vs. Jev
+
+**90.04% accuracy on 231 public JevBench items — 3.46 percentage points above
+Jev 1.13.0's published results on the same items.**
+
+| Public JevBench subset | OpenJeff 0.1.0 | Jev 1.13.0¹ | Difference |
+|---|---:|---:|---:|
+| **All public · 231 items** | **90.04%** | 86.58% | **+3.46 pp** |
+| Hard · 111 items | **80.18%** | 72.97% | **+7.21 pp** |
+| Original · 72 items | 98.61% | 98.61% | Tie |
+| Easy · 48 items | 100.00% | 100.00% | Tie |
+
+¹ Jev's results are recomputed from [the benchmark publisher's recorded outcomes](https://github.com/fstandhartinger/jevbench/blob/f79a1cab94ab9a5879383b7ef9ee1805b9dc2d84/results/v1.2/jevbench-v1.2-per-task.json)
+on the same public task IDs. OpenJeff is our initial A100 pilot; Jev was **not
+rerun here**, and prompts, hardware, and runtimes differ. This is a descriptive
+accuracy comparison on the **231-item public subset**, not the full 534-item
+benchmark, an official JevBench composite score, or a claim of overall superiority.
+
+[Results, methodology, and raw evidence](reports/RESULTS.md#public-jevbench-transfer-test)
+· [Reproduce the pilot](docs/using-openjeff.md)
+· [Diffusion follow-up](reports/HYBRID-RESULTS.md)
+
+OpenJeff also improved public accuracy over its unadapted Gemma 4 12B foundation
+from **70.13% to 90.04%** in the same pilot. Median local request time was
+**72.3 ms** on an A100 80 GB, excluding networking, cold loading, and multi-user
+contention; it is not a speed comparison with Jev's hosted API.
+
+<details>
+<summary>More pilot results and limitations</summary>
 
 | Measured result | Base Gemma 4 12B | OpenJeff |
 |---|---:|---:|
 | Synthetic final set, 600 examples | 79.67% | **97.50%** |
-| Public JevBench, 231 items | 70.13% | **90.04%** |
-| Public JevBench hard, 111 items | 42.34% | **80.18%** |
-| Final-set candidate-order disagreement | 22.00% | **1.83%** |
+| Final-set candidate-order disagreement (lower is better) | 22.00% | **1.83%** |
 
-These are this pilot's measurements. The 231 public JevBench items are a subset
-of the full 534-item benchmark; **this is not an official leaderboard result**.
 A normalized-state audit found 197/600 synthetic final cases matching training
-states; OpenJeff scored 96.28% on the remaining 403. Synthetic calibration does not
-establish probability quality in an unfamiliar
-workflow. The public-hard calibration error remains 0.142 (10-bin ECE).
+states; OpenJeff scored 96.28% on the remaining 403. Synthetic calibration does
+not establish probability quality in an unfamiliar workflow. The public-hard
+calibration error remains 0.142 (10-bin ECE). No Jev comparison was run on this
+synthetic set.
+
+The later H200 diffusion study is a separate experiment: AR-only scored 90.91%
+on the public subset and diffusion-guided AR scored 89.61%. The initial pilot
+above is preserved rather than mixing measurements across environments.
+
+</details>
+
+**Version 0.1.0 pilot is trained and evaluated.** It pairs Google's Gemma 4 12B IT
+with an original LoRA adapter and a frozen temperature calibrator. Original code,
+adaptation data, and adapter are Apache-2.0; upstream artifacts retain their terms.
+No external inference API is required.
 
 ## Start here
 
