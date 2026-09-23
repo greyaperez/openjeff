@@ -23,6 +23,8 @@
   "guidance_reconstructed_from_recorded_outputs": true,
   "original_adapter_sha256": "a1811874542eb3b9ca4235d79826dfabb847f0c5ad076bfd25b5e4b2f426ba2b",
   "scope": "Saved-score validation; does not rerun GPU inference or establish benchmark contamination absence.",
+  "fusion_log_score_absolute_tolerance": 1e-12,
+  "fusion_maximum_log_score_difference": 0.0,
   "calibration_checks": {
     "ar": {
       "saved_temperature": 1.1197247771148635,

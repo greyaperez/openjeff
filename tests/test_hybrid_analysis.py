@@ -1,6 +1,7 @@
 import unittest
 from scripts.analyze_hybrid_v2 import mix,paired
 from openjeff.calibration import probabilities
+from scripts.validate_hybrid_v2 import validate_fusion_rows
 
 class HybridAnalysisTests(unittest.TestCase):
     def test_probability_mixture_endpoints_and_alignment(self):
@@ -14,5 +15,15 @@ class HybridAnalysisTests(unittest.TestCase):
         self.assertAlmostEqual(mix(a,b,.5)[0]['latency_s'],.3)
         with self.assertRaises(ValueError):mix(a,[{**b[0],'id':'b'}],.5)
         report=paired(a,b);self.assertEqual(report['broken'],1);self.assertEqual(report['repaired'],0)
+
+    def test_fusion_validation_accepts_roundoff_but_rejects_corruption(self):
+        row={'id':'x','target':0,'input_sha256':'abc','scorer_id':'fixed','scores':[-.3,-1.4],'latency_s':.2}
+        validate_fusion_rows([row],[{**row,'scores':[-.3+4e-16,-1.4]}])
+        with self.assertRaises(AssertionError):
+            validate_fusion_rows([row],[{**row,'scores':[-.3+1e-7,-1.4]}])
+        with self.assertRaises(AssertionError):
+            validate_fusion_rows([row],[{**row,'scorer_id':'changed'}])
+        with self.assertRaises(ValueError):
+            validate_fusion_rows([row],[{**row,'target':1}])
 
 if __name__=='__main__':unittest.main()

@@ -7,6 +7,19 @@ from openjeff.training import adapter_digest
 from scripts.hybrid_common import ROOT,SPLITS,cases,read
 from scripts.analyze_hybrid_v2 import METHODS,mix,aligned
 
+def validate_fusion_rows(expected,actual):
+    aligned(expected,actual)
+    maximum=0.0
+    for x,y in zip(expected,actual):
+        assert {k:v for k,v in x.items() if k!='scores'}=={k:v for k,v in y.items() if k!='scores'},'Fusion metadata differs'
+        for a,b in zip(x['scores'],y['scores']):
+            # Python 3.12 changed float sum accumulation. Recomputed log scores
+            # can differ by a few ulps without changing the saved experiment.
+            assert math.isfinite(a) and math.isfinite(b)
+            delta=abs(a-b);assert delta<=1e-12,'Fusion score differs'
+            maximum=max(maximum,delta)
+    return maximum
+
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--out',default='runs/hybrid-v2');a=p.parse_args();out=Path(a.out)
     rows={m:{s:read(out/f'{m}-{s}.jsonl') for s in SPLITS} for m in METHODS}
@@ -48,12 +61,15 @@ def main():
     selection=json.loads((out/'fusion-selection.json').read_text())
     candidates=[(mean_nll(mix(rows['ar']['development'],rows['diffusion']['development'],w),1),w) for w in (0,.25,.5,.75,1)]
     w=min(candidates)[1];assert w==selection['selected_weight_diffusion']
+    fusion_maximum_difference=0.0
     for s in SPLITS:
         expected=mix(rows['ar'][s],rows['diffusion'][s],w)
-        assert expected==rows['fusion'][s]
+        fusion_maximum_difference=max(fusion_maximum_difference,validate_fusion_rows(expected,rows['fusion'][s]))
     fingerprint=adapter_digest(ROOT/'runs/pilot-v1/adapter')
     assert fingerprint=='a1811874542eb3b9ca4235d79826dfabb847f0c5ad076bfd25b5e4b2f426ba2b'
     result={'status':'passed','validated_score_rows':count,'methods':list(METHODS),'splits':list(SPLITS),'calibration_fits_recomputed':6,'fusion_selection_recomputed_from_development_only':True,'guidance_reconstructed_from_recorded_outputs':True,'original_adapter_sha256':fingerprint,'scope':'Saved-score validation; does not rerun GPU inference or establish benchmark contamination absence.'}
+    result['fusion_log_score_absolute_tolerance']=1e-12
+    result['fusion_maximum_log_score_difference']=fusion_maximum_difference
     result['calibration_checks']=calibration_checks
     result['calibration_tolerances']={'temperature_relative':1e-6,'temperature_absolute':1e-8,'fit_nll_absolute':1e-12,'maximum_probability_absolute':5e-7}
     (ROOT/'reports/hybrid-v2-validation.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
